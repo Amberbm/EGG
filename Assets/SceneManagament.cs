@@ -9,4 +9,14 @@ public class SceneManagament : MonoBehaviour
     {
         SceneManager.LoadScene("SampleScene");
     }
+
+    public void Settings()
+    {
+        SceneManager.LoadScene("SettingScene");
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Starting scene");
+    }
 }
