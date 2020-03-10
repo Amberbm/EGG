@@ -15,11 +15,10 @@ public class BuyButton : MonoBehaviour
 
     void Start()
     {
-        SetProperty();
+        
     }
 
     
-
     void Update()
     {
         //checks wheather the player should be able to press the buybutton

@@ -31,15 +31,11 @@ class PropertyManager : MonoBehaviour
 
     public PropertyObject Checkproperty;
 
-    //add property to the list of all porrible properties
+    //add property to the list of all possible properties
     public void AddProperty(PropertyObject property)
     {
         AllProperties.Add(property);
-        SetPossibleProperties();
         SetBuyList.Invoke();
-        CheckList = AllProperties;
-
-        check2 = PossibleProperties;
 }
 
     //add tag to te list of tags
@@ -55,7 +51,12 @@ class PropertyManager : MonoBehaviour
         PropertyObject property = BuyButton.property;
         properties.Add(property);
         MoneyManager.amount -= property.price;
-        SetPossibleProperties();
+        property.AtBuying();
+        if (property.type == "Property")
+            SetPropertyList();
+        else
+            SetResearchList();
+
         Checkproperty = property;
        CheckList2 = properties;
     }
@@ -68,12 +69,27 @@ class PropertyManager : MonoBehaviour
 
     //give all properties with the right requirements their own id and set the range of the id's
     //properties that players are unable to buy are given the id of -1 so they fall outside of the range
-    public void SetPossibleProperties()//after each change
+    public void SetPropertyList()//set the list of properties the player can buy
     {
         PossibleProperties = 0;
         foreach (PropertyObject propertyObject in AllProperties)
         {
-            if (propertyObject.RequirmentsMeet())
+            if (propertyObject.RequirmentsMeet()&& propertyObject.type =="Property")
+            {
+                propertyObject.id = PossibleProperties;
+                PossibleProperties++;
+            }
+            else
+                propertyObject.id = -1;
+        }
+    }
+
+    public void SetResearchList()//set the list of research the player can fund
+    {
+        PossibleProperties = 0;
+        foreach (PropertyObject propertyObject in AllProperties)
+        {
+            if (propertyObject.RequirmentsMeet() && propertyObject.type == "Research")
             {
                 propertyObject.id = PossibleProperties;
                 PossibleProperties++;

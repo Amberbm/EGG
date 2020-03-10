@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MoralitySlider : MonoBehaviour
+public class Environment : MonoBehaviour
 {
     public static float value;
     void Start()
@@ -11,13 +11,17 @@ public class MoralitySlider : MonoBehaviour
         value = GetComponent<Slider>().value;
     }
 
-   
-    
-     
+
+    void Update()
+    {
+        GetComponent<Slider>().value = value;
+    }
+
     public void ChangeValue(int num)
     {
-        GetComponent<Slider>().value += num;
-        value = GetComponent<Slider>().value;
+        value += num;
+        Morality.value -= num * value * 0.01f;
     }
-    
+
+
 }
