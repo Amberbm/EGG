@@ -7,17 +7,13 @@ using UnityEngine.EventSystems;
 
 public class BuyButton : MonoBehaviour
 {
-
     public Text text;
     public static PropertyObject property;
-    public PropertyObject Checkproperty;
-
 
     void Start()
     {
-        
+        SetProperty();
     }
-
     
     void Update()
     {
@@ -34,14 +30,13 @@ public class BuyButton : MonoBehaviour
         }
         else
             GetComponent<Button>().interactable = false;
-        
     }
+
 
     //Declare which property is selected for the buy button and set the buttons text accordingly
     public void SetProperty()
     {
         property = PropertyManager.AllProperties.Find(x=> x.id == SelectProperty.SelectedProperty);
-        Checkproperty = property;
         if (property != null)
             text.text = "Buy " + property.propertyName + "  $" + property.price;
         else

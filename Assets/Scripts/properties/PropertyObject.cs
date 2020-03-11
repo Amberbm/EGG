@@ -7,17 +7,17 @@ using UnityEngine.EventSystems;
 
 public class PropertyObject : MonoBehaviour
 {
+    public int id;
     public string propertyName;
     public List<string> Tags; //list of tags in the form of strings
     public int baseWorth; //amount of income the player get from this object without the tag factors
     public int price;
-    public int id;
-    //public List<float> factors;
     float influenceFactor = 1;
-    public string type;//types are "Research", "Property" and "Upgrade"
     public int morality;
     public int influence;
     public int environment;
+
+    public string Description;
    
     //event to add property to the list of all existing properties
     public UnityEvent Add { get { if (add == null) add = new UnityEvent(); return add; } }[SerializeField] private UnityEvent add;

@@ -14,17 +14,26 @@ public class EventObject : MonoBehaviour
     public UnityEvent Option2 { get { if (option2 == null) option2 = new UnityEvent(); return option2; } } [SerializeField] private UnityEvent option2;
 
     public int id;
+    public string eventName;
     public string eventDescription;
     public string stringOption1;
     public string stringOption2;
     public int minIncome;
 
+    public List<string> previousEvents ; // list of all previous events that need to have been occured before this event can be shown
+    public bool hasHappened;// bool that states weather the event has occured yet
+
     //bool to check whether an event voldoet aan de requirments to be shown as an event
     public bool EventRequirementsMeet()
     {
-        if (MoneyManager.amount >= minIncome )
-            return true;
-        return false;
+        
+        if (MoneyManager.amount < minIncome )
+            return false;
+        //checks for all required previous events weather they have happenedyet
+        foreach (string previousEvent in previousEvents) 
+            if (!EventManager.AllEvents.Find(x=> x.eventName == previousEvent).hasHappened)
+                return false;
+        return true;
     }
     
     // Start is called before the first frame update

@@ -7,12 +7,14 @@ using UnityEngine.EventSystems;
 public class EventManager : MonoBehaviour
 {
     //set the panel with the chosen event into the screen
-    public UnityEvent ShowEvent { get { if (showEvent == null) showEvent = new UnityEvent(); return showEvent; } }  [SerializeField] private UnityEvent showEvent;
+    public UnityEvent ShowEvent { get { if (showEvent == null) showEvent = new UnityEvent(); return showEvent; } }
+    [SerializeField] private UnityEvent showEvent;
 
-    public List<EventObject> AllEvents; //list of all existing events
+    public static List<EventObject> AllEvents; //list of all existing events
     public int PossibleEvents; //range of the id's of the events which requirments meet
     public static EventObject currentEvent; //the event that eventually was chosen to be shown
     
+
     //add event to the list of events
     public void AddEvent(EventObject eventObject)
     {
@@ -24,7 +26,7 @@ public class EventManager : MonoBehaviour
     {
         if (DayCounter.dayCount % 10 == 0)
         {
-            PossibleEvents= 0;
+            PossibleEvents = 0;
             foreach (EventObject eventObject in AllEvents)
             {
                 if (eventObject.EventRequirementsMeet())
@@ -42,7 +44,7 @@ public class EventManager : MonoBehaviour
         }
     }
 
-    
+
     public void InvokeOption1() //when option 1 is chosen
     {
         currentEvent.Option1.Invoke();
@@ -52,5 +54,5 @@ public class EventManager : MonoBehaviour
     {
         currentEvent.Option2.Invoke();
     }
-
+    
 }
