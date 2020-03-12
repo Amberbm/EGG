@@ -11,6 +11,7 @@ public class MoneyManager : MonoBehaviour
     public static int amount=10; //total amount of money the player has
     public Text text;
     public static int income = 0;
+    float percentage;
 
     //show the total amount of money and the "daily" income into the screen
     void Update()
@@ -29,6 +30,18 @@ public class MoneyManager : MonoBehaviour
     public void GetIncome() //at the end of each turn
     {
         amount += income;
+    }
+
+    public void Percentage(int num)
+    {
+        percentage = ((float)num / 100) * amount;
+        amount -= (int)percentage;
+    }
+
+    public void PercentageIncrease(int num)
+    {
+        percentage = ((float)num / 100) * amount;
+        amount += (int)percentage;
     }
 
     //set income tho the calulated worth of all owned properties

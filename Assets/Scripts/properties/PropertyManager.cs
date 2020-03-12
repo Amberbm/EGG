@@ -61,7 +61,7 @@ class PropertyManager : MonoBehaviour
         property.AtBuying();
     }
 
-    //BuyResearch is in the researc itsself.
+    //BuyResearch is in the research itsself.
 
     public void BuyUpgrade()
     {

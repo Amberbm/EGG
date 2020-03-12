@@ -10,7 +10,7 @@ public class EventManager : MonoBehaviour
     public UnityEvent ShowEvent { get { if (showEvent == null) showEvent = new UnityEvent(); return showEvent; } }
     [SerializeField] private UnityEvent showEvent;
 
-    public static List<EventObject> AllEvents; //list of all existing events
+    public List<EventObject> AllEvents; //list of all existing events
     public int PossibleEvents; //range of the id's of the events which requirments meet
     public static EventObject currentEvent; //the event that eventually was chosen to be shown
     
@@ -48,6 +48,11 @@ public class EventManager : MonoBehaviour
     public void InvokeOption1() //when option 1 is chosen
     {
         currentEvent.Option1.Invoke();
+    }
+    
+    public void eventConsequences(string consequences)
+    {
+        currentEvent.eventConsequences = consequences;
     }
 
     public void InvokeOption2()//when option 2 is chosen

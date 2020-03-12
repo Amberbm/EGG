@@ -17,8 +17,10 @@ public class EventObject : MonoBehaviour
     public string eventName;
     public string eventDescription;
     public string stringOption1;
+    public string eventConsequences;
     public string stringOption2;
     public int minIncome;
+    float percentage;
 
     public List<string> previousEvents ; // list of all previous events that need to have been occured before this event can be shown
     public bool hasHappened;// bool that states weather the event has occured yet
@@ -30,12 +32,12 @@ public class EventObject : MonoBehaviour
         if (MoneyManager.amount < minIncome )
             return false;
         //checks for all required previous events weather they have happenedyet
-        foreach (string previousEvent in previousEvents) 
-            if (!EventManager.AllEvents.Find(x=> x.eventName == previousEvent).hasHappened)
-                return false;
+       // foreach (string previousEvent in previousEvents) 
+          //  if (!EventManager.AllEvents.Find(x=> x.eventName == previousEvent).hasHappened)
+            //    return false;
         return true;
     }
-    
+
     // Start is called before the first frame update
     //add the event to the eventlist in the eventmanager
     void Start()
