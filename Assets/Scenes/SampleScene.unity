@@ -300,12 +300,34 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 735966477}
-        m_MethodName: IncreaseFunds
+        m_MethodName: PercentageIncrease
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -50
+          m_IntArgument: 50
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 465919748}
+        m_MethodName: changeConsequences
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: You get your moneys worth of ChiCoin back in.
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 864577344}
+        m_MethodName: Pulse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -314,14 +336,37 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 864577344}
-        m_MethodName: SendMessage
+        m_MethodName: Pulse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 465919748}
+        m_MethodName: changeConsequences
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Work?
+          m_StringArgument: 'ChiCoin crashes and as a result you lose all of your
+            invested money. '
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 735966477}
+        m_MethodName: Percentage
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
   id: 0
@@ -329,6 +374,7 @@ MonoBehaviour:
   eventDescription: ChiCoin, has been popular for some time now. The value has increased
     by 50%
   stringOption1: Sell your current coins
+  eventConsequences: 
   stringOption2: Buy some more
   minIncome: 0
   previousEvents: []
@@ -838,7 +884,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &192719732
 GameObject:
@@ -954,7 +1000,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &265905464
 GameObject:
@@ -1281,7 +1327,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 924731950}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1738,7 +1784,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &441470642
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1805,6 +1851,7 @@ MonoBehaviour:
   eventName: Eggs in one basket
   eventDescription: A new cryptocurrency, ChiCoin, has been very popular lately.
   stringOption1: Ignore it
+  eventConsequences: 
   stringOption2: Invest in the future
   minIncome: 0
   previousEvents: []
@@ -1873,7 +1920,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &465919744
 GameObject:
@@ -1886,6 +1933,7 @@ GameObject:
   - component: {fileID: 465919745}
   - component: {fileID: 465919747}
   - component: {fileID: 465919746}
+  - component: {fileID: 465919748}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -1932,10 +1980,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: d54323c94c164de478170d5e7d0273be, type: 3}
-    m_FontSize: 30
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1952,6 +2000,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 465919744}
   m_CullTransparentMesh: 0
+--- !u!114 &465919748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465919744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 493d39824deb9b34691462aa78a14c9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 465919746}
+  Consequences: 
 --- !u!1 &466923335
 GameObject:
   m_ObjectHideFlags: 0
@@ -3170,7 +3232,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000038147, y: 84}
+  m_AnchoredPosition: {x: -0.0000038147, y: 136}
   m_SizeDelta: {x: 665.5, y: 314.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &715680482
@@ -4091,17 +4153,17 @@ RectTransform:
   m_GameObject: {fileID: 864577343}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.52083, y: 0.52083, z: 0.52083}
+  m_LocalScale: {x: 0.71468955, y: 0.71468955, z: 0.71468955}
   m_Children:
   - {fileID: 1785242112}
   - {fileID: 953169913}
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 924731950}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 291.5, y: 200}
-  m_SizeDelta: {x: 1119.36, y: 768}
+  m_AnchoredPosition: {x: 0, y: -0.000030517578}
+  m_SizeDelta: {x: 319.36, y: 219.11499}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &880718928
 GameObject:
@@ -4521,11 +4583,12 @@ RectTransform:
   - {fileID: 1376664196}
   - {fileID: 1321537466}
   - {fileID: 1325756935}
+  - {fileID: 864577345}
   - {fileID: 333841069}
   - {fileID: 1897197018}
   - {fileID: 1567708709}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4581,7 +4644,7 @@ MonoBehaviour:
   Data:
     Duration: 1
     Target: {fileID: 1785242112}
-    Position: 80
+    Position: -800
     Ease: 200
 --- !u!114 &953169915
 MonoBehaviour:
@@ -4595,7 +4658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9fc21c8e2bf09498bc4523fe015d04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Duration: 5
+  Duration: 3
 --- !u!114 &953169916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4612,7 +4675,7 @@ MonoBehaviour:
   Data:
     Duration: 1
     Target: {fileID: 1785242112}
-    Position: 0
+    Position: -709.8
     Ease: 250
 --- !u!1 &953454272
 GameObject:
@@ -5631,7 +5694,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1113731632
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5679,38 +5742,42 @@ MonoBehaviour:
         m_CallState: 2
   option1:
     m_PersistentCalls:
+      m_Calls: []
+  option2:
+    m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 735966477}
-        m_MethodName: IncreaseFunds
-        m_Mode: 3
+      - m_Target: {fileID: 864577344}
+        m_MethodName: Pulse
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 100
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  option2:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 735966477}
-        m_MethodName: IncreaseFunds
-        m_Mode: 3
+      - m_Target: {fileID: 465919748}
+        m_MethodName: changeConsequences
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -100
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
   id: 0
-  eventName: 
-  eventDescription: +100 or -100
-  stringOption1: +
-  stringOption2: '-'
-  minIncome: 100
+  eventName: Nigerian prince
+  eventDescription: "You get an email from \u2018a far relative\u2019 from Nigeria
+    that announces his uncle, a prominent and rich person, has died and you have
+    the right to a big part of his inheritance. All you have to do is transfer 10.000$
+    to his bank account."
+  stringOption1: "\u201CI\u2019m not sure if I have family in Africa\u201D"
+  eventConsequences: 
+  stringOption2: You are excited to get in touch with your eggstended family
+  minIncome: 0
   previousEvents: []
   hasHappened: 0
 --- !u!1 &1148346805
@@ -6217,7 +6284,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 124, y: 192}
+  m_AnchoredPosition: {x: 126, y: 240}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1325756936
@@ -7156,7 +7223,7 @@ RectTransform:
   - {fileID: 829868398}
   - {fileID: 1896101038}
   m_Father: {fileID: 924731950}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7884,7 +7951,7 @@ RectTransform:
   m_GameObject: {fileID: 1785242111}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5145, y: 1.5145, z: 1.5145}
   m_Children:
   - {fileID: 1172494423}
   - {fileID: 619505867}
@@ -7894,8 +7961,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 80}
-  m_SizeDelta: {x: 550, y: 60}
+  m_AnchoredPosition: {x: 22, y: -800}
+  m_SizeDelta: {x: 550, y: 37}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &1788133899
 GameObject:
@@ -8844,7 +8911,7 @@ RectTransform:
   - {fileID: 1089225763}
   - {fileID: 2033924329}
   m_Father: {fileID: 924731950}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -9488,6 +9555,7 @@ MonoBehaviour:
   eventName: 
   eventDescription: 
   stringOption1: 
+  eventConsequences: 
   stringOption2: 
   minIncome: 0
   previousEvents: []
