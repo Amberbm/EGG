@@ -16,8 +16,10 @@ public class EventObject : MonoBehaviour
     public int id;
     public string eventDescription;
     public string stringOption1;
+    public string eventConsequences;
     public string stringOption2;
     public int minIncome;
+    float percentage;
 
     public List<EventObject> previousEventsSecondOption ; // list of all previous events that need to have been occured before this event where the second option was selected can be shown
     public List<EventObject> previousEventsFirstOption; // list of all previous events that need to have been occured before this event where the First option was selected can be shown
@@ -33,7 +35,7 @@ public class EventObject : MonoBehaviour
                 return false;
         if (MoneyManager.amount < minIncome )
             return false;
-        //checks for all required previous events weather they have happenedyet
+        //checks for all required previous events weather they have happenedyet and if the rght choices were made
         foreach (EventObject previousEvent in previousEventsSecondOption) 
             if (!previousEvent.SecondOptionSelected)
                 return false;
@@ -42,7 +44,7 @@ public class EventObject : MonoBehaviour
                 return false;
         return true;
     }
-    
+
     // Start is called before the first frame update
     //add the event to the eventlist in the eventmanager
     void Start()

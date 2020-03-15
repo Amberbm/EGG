@@ -65,7 +65,7 @@ class PropertyManager : MonoBehaviour
         SetPossibleProperties();
         property.AtBuying();
     }
-
+    
     public void BuyResearch()
     {
         BuyResearchButton.research.BuyResearch();
