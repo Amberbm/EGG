@@ -10,10 +10,15 @@ public class EventManager : MonoBehaviour
     public UnityEvent ShowEvent { get { if (showEvent == null) showEvent = new UnityEvent(); return showEvent; } }
     [SerializeField] private UnityEvent showEvent;
 
-    public static List<EventObject> AllEvents; //list of all existing events
+    public static List<EventObject> AllEvents = new List<EventObject> { }; //list of all existing events
     public int PossibleEvents; //range of the id's of the events which requirments meet
     public static EventObject currentEvent; //the event that eventually was chosen to be shown
     
+    
+    public void EventHappened()
+    {
+        currentEvent.hasHappened = true;
+    }
 
     //add event to the list of events
     public void AddEvent(EventObject eventObject)

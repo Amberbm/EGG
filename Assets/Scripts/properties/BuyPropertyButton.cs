@@ -5,10 +5,11 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-public class BuyButton : MonoBehaviour
+public class BuyPropertyButton : MonoBehaviour
 {
     public Text text;
     public static PropertyObject property;
+    public Text Description;
 
     void Start()
     {
@@ -38,8 +39,14 @@ public class BuyButton : MonoBehaviour
     {
         property = PropertyManager.AllProperties.Find(x=> x.id == SelectProperty.SelectedProperty);
         if (property != null)
+        {
             text.text = "Buy " + property.propertyName + "  $" + property.price;
+            Description.text = property.Description;
+        }
         else
+        {
             text.text = "";
+            Description.text = "";
+        }
     }
 }

@@ -14,24 +14,31 @@ public class EventObject : MonoBehaviour
     public UnityEvent Option2 { get { if (option2 == null) option2 = new UnityEvent(); return option2; } } [SerializeField] private UnityEvent option2;
 
     public int id;
-    public string eventName;
     public string eventDescription;
     public string stringOption1;
     public string stringOption2;
     public int minIncome;
 
-    public List<string> previousEvents ; // list of all previous events that need to have been occured before this event can be shown
+    public List<EventObject> previousEventsSecondOption ; // list of all previous events that need to have been occured before this event where the second option was selected can be shown
+    public List<EventObject> previousEventsFirstOption; // list of all previous events that need to have been occured before this event where the First option was selected can be shown
+    public bool SecondOptionSelected; //bool that states which option had been selected;
     public bool hasHappened;// bool that states weather the event has occured yet
+    public bool HappensOnce;
 
     //bool to check whether an event voldoet aan de requirments to be shown as an event
     public bool EventRequirementsMeet()
     {
-        
+        if (HappensOnce)
+            if (hasHappened)
+                return false;
         if (MoneyManager.amount < minIncome )
             return false;
         //checks for all required previous events weather they have happenedyet
-        foreach (string previousEvent in previousEvents) 
-            if (!EventManager.AllEvents.Find(x=> x.eventName == previousEvent).hasHappened)
+        foreach (EventObject previousEvent in previousEventsSecondOption) 
+            if (!previousEvent.SecondOptionSelected)
+                return false;
+        foreach (EventObject previousEvent in previousEventsFirstOption)
+            if (previousEvent.SecondOptionSelected && !previousEvent.hasHappened)
                 return false;
         return true;
     }

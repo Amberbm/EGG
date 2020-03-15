@@ -14,13 +14,15 @@ class PropertyManager : MonoBehaviour
 
     public static List<PropertyObject> AllProperties = new List<PropertyObject> { }; // List of all existing kinds of properties
     public static List<PropertyObject> properties = new List<PropertyObject> { }; //List of all properties aquired by the player
-    public static List<Research> AllResearch;
-    public static List<Upgrade> AllUpdates;
+    public static List<Research> AllResearch = new List<Research> { };
+    public static List<Upgrade> AllUpgrades = new List<Upgrade> { };
     public static List<Tag> tags = new List<Tag> {}; 
     
     public static int PossibleProperties; //range of ids of the properties that the player can buy
     public static int PossibleResearch;
-    public static int UpgradeLevel = 1;//current gameStage
+    public static int UpgradeLevel = 0;//current gameStage
+
+    
 
     public void SetFactor(Tag tag, float factor)
     {
@@ -44,29 +46,35 @@ class PropertyManager : MonoBehaviour
     public void AddResearch(Research research)
     {
         AllResearch.Add(research);
+        SetPossibleResearch();
+        SetBuyList.Invoke();
     }
 
     public void AddUpgrade(Upgrade upgrade)
     {
-        AllUpdates.Add(upgrade);
+        AllUpgrades.Add(upgrade);
+        SetBuyList.Invoke();
     }
 
     //add property to the list of aquired properties and subtract its price from the total amount of money
     public void BuyProperty()
     {
-        PropertyObject property = BuyButton.property;
+        PropertyObject property = BuyPropertyButton.property;
         properties.Add(property);
         MoneyManager.amount -= property.price;
         SetPossibleProperties();
         property.AtBuying();
     }
 
-    //BuyResearch is in the researc itsself.
+    public void BuyResearch()
+    {
+        BuyResearchButton.research.BuyResearch();
+    }
 
     public void BuyUpgrade()
     {
         UpgradeLevel++;
-        MoneyManager.amount -= AllUpdates.Find(x => x.upgradeLevel == UpgradeLevel).price;
+        MoneyManager.amount -= AllUpgrades.Find(x => x.upgradeLevel == UpgradeLevel).price;
     }
 
     public void GetProperty(string name) //for event

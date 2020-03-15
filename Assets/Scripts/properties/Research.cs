@@ -26,7 +26,7 @@ public class Research : MonoBehaviour
         Add.Invoke();
     }
 
-    RequirmentsMeet()
+    public bool RequirmentsMeet()
     {
         if (MoneyManager.amount < price)
             return false;

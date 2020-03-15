@@ -22,4 +22,6 @@ public class SelectProperty : MonoBehaviour
             list.Add(PropertyManager.AllProperties.Find(x=> x.id == i).propertyName);
         GetComponent<Dropdown>().AddOptions(list);
     }
+
+   
 }

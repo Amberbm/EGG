@@ -16,12 +16,10 @@ public class Upgrade : MonoBehaviour
     public string Description;
 
 
-
     // Start is called before the first frame update
     void Start()
     {
         Add.Invoke();
     }
     
-
 }
