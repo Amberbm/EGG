@@ -20,6 +20,9 @@ public class EventObject : MonoBehaviour
     public string eventConsequences;
     public string stringOption2;
     public int minIncome;
+    public int minInfluence;
+    public int maxEnvironment;
+    public int maxMorality;
     float percentage;
 
     public List<EventObject> previousEventsSecondOption ; // list of all previous events that need to have been occured before this event where the second option was selected can be shown
@@ -35,6 +38,12 @@ public class EventObject : MonoBehaviour
             if (hasHappened)
                 return false;
         if (MoneyManager.amount < minIncome )
+            return false;
+        if (Influence.value < minInfluence)
+            return false;
+        if (Environment.value > maxEnvironment)
+            return false;
+        if (Morality.value > maxMorality)
             return false;
         //checks for all required previous events weather they have happenedyet and if the rght choices were made
         foreach (EventObject previousEvent in previousEventsSecondOption) 
