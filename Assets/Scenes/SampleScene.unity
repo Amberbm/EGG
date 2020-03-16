@@ -381,11 +381,13 @@ MonoBehaviour:
   minInfluence: 0
   maxEnvironment: 0
   maxMorality: 0
-  previousEventsSecondOption: [{fileID: 441470643}]
+  stage: 2
+  HappensOnce: 1
+  previousEventsSecondOption:
+  - {fileID: 441470643}
   previousEventsFirstOption: []
   SecondOptionSelected: 0
   hasHappened: 0
-  HappensOnce: 0
 --- !u!1 &57482268
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,7 +682,8 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Your choice has made the CEO's very happy and they even
-            give you some bribes to stay silent. So you've profited, but at what cost?
+            give you some bribes to stay silent. So you've profited, but at what
+            cost?
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 164424959}
@@ -736,13 +739,14 @@ MonoBehaviour:
   stringOption2: Burn it to the ground.
   minIncome: 0
   minInfluence: 0
-  maxEnvironment: -40
-  maxMorality: -20
+  maxEnvironment: 0
+  maxMorality: 0
+  stage: 3
+  HappensOnce: 0
   previousEventsSecondOption: []
   previousEventsFirstOption: []
   SecondOptionSelected: 0
   hasHappened: 0
-  HappensOnce: 0
 --- !u!1 &113133215
 GameObject:
   m_ObjectHideFlags: 0
@@ -1643,12 +1647,13 @@ MonoBehaviour:
   minInfluence: 0
   maxEnvironment: 0
   maxMorality: 0
+  stage: 3
+  HappensOnce: 1
   previousEventsSecondOption: []
   previousEventsFirstOption:
   - {fileID: 1488704428}
   SecondOptionSelected: 0
   hasHappened: 0
-  HappensOnce: 0
 --- !u!1 &192694196
 GameObject:
   m_ObjectHideFlags: 0
@@ -1804,6 +1809,136 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &223177699
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 223177700}
+  - component: {fileID: 223177701}
+  m_Layer: 5
+  m_Name: "McNaldo\u2019s"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &223177700
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223177699}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1896101038}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &223177701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223177699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 806e8acbfaac45a42af17b0b3c1af851, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 829868397}
+        m_MethodName: AddEvent
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 223177701}
+          m_ObjectArgumentAssemblyTypeName: EventObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  option1:
+    m_PersistentCalls:
+      m_Calls: []
+  option2:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 678633339}
+        m_MethodName: GetProperty
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "McNaldo\u2019s"
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 735966477}
+        m_MethodName: IncreaseFunds
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -20
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 465919748}
+        m_MethodName: changeConsequences
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "For the small price of 20 McNaldo\u2019s will now make
+            money for you."
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 864577344}
+        m_MethodName: Pulse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  id: 0
+  eventName: "McNaldo\u2019s"
+  eventDescription: "The local McNaldo\u2019s has gone bankrupt and is the ownership
+    has gone up for action."
+  stringOption1: Ignore it.
+  eventConsequences: 
+  stringOption2: Purchase the restaurant.
+  minIncome: 20
+  minInfluence: 0
+  maxEnvironment: 0
+  maxMorality: 0
+  stage: 2
+  HappensOnce: 0
+  previousEventsSecondOption: []
+  previousEventsFirstOption: []
+  SecondOptionSelected: 0
+  hasHappened: 0
 --- !u!1 &265905464
 GameObject:
   m_ObjectHideFlags: 0
@@ -2891,11 +3026,12 @@ MonoBehaviour:
   minInfluence: 0
   maxEnvironment: 0
   maxMorality: 0
-  previousEventsSecondOption: [{fileID: 0}]
-  previousEventsFirstOption: [{fileID: 0}]
+  stage: 1
+  HappensOnce: 1
+  previousEventsSecondOption: []
+  previousEventsFirstOption: []
   SecondOptionSelected: 0
   hasHappened: 0
-  HappensOnce: 0
 --- !u!1 &455726559
 GameObject:
   m_ObjectHideFlags: 0
@@ -4186,7 +4322,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  upgradeLevel: 1
+  upgradeLevel: 2
   price: 50
   Influence: 10
   upgradeName: Bigger office
@@ -5489,11 +5625,12 @@ MonoBehaviour:
   minInfluence: 0
   maxEnvironment: 0
   maxMorality: 0
+  stage: 1
+  HappensOnce: 0
   previousEventsSecondOption: []
   previousEventsFirstOption: []
   SecondOptionSelected: 0
   hasHappened: 0
-  HappensOnce: 0
 --- !u!1 &880718928
 GameObject:
   m_ObjectHideFlags: 0
@@ -5811,6 +5948,7 @@ MonoBehaviour:
   influence: 0
   environment: 0
   Description: 
+  unbuyable: 0
   add:
     m_PersistentCalls:
       m_Calls:
@@ -5825,9 +5963,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  addtags:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &924731946
 GameObject:
   m_ObjectHideFlags: 0
@@ -6510,6 +6645,7 @@ MonoBehaviour:
   influence: 0
   environment: 0
   Description: 
+  unbuyable: 0
   add:
     m_PersistentCalls:
       m_Calls:
@@ -6524,9 +6660,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  addtags:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1031817433
 GameObject:
   m_ObjectHideFlags: 0
@@ -7082,7 +7215,18 @@ MonoBehaviour:
         m_CallState: 2
   option1:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 465919748}
+        m_MethodName: High
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   option2:
     m_PersistentCalls:
       m_Calls:
@@ -7120,7 +7264,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 465919748}
-        m_MethodName: Low
+        m_MethodName: High
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7167,8 +7311,8 @@ MonoBehaviour:
   id: 0
   eventName: Nigerian prince
   eventDescription: "You get an email from \u2018a far relative\u2019 from Nigeria
-    that announces his uncle, a prominent and rich person, has died and you have the
-    right to a big part of his inheritance. All you have to do is transfer 10.000$
+    that announces his uncle, a prominent and rich person, has died and you have
+    the right to a big part of his inheritance. All you have to do is transfer 10.000$
     to his bank account."
   stringOption1: "\u201CI\u2019m not sure if I have family in Africa\u201D"
   eventConsequences: 
@@ -7177,11 +7321,12 @@ MonoBehaviour:
   minInfluence: 0
   maxEnvironment: 0
   maxMorality: 0
+  stage: 2
+  HappensOnce: 0
   previousEventsSecondOption: []
   previousEventsFirstOption: []
   SecondOptionSelected: 0
   hasHappened: 0
-  HappensOnce: 0
 --- !u!1 &1148346805
 GameObject:
   m_ObjectHideFlags: 0
@@ -7615,6 +7760,78 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259765762}
   m_CullTransparentMesh: 0
+--- !u!1 &1267774890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1267774891}
+  - component: {fileID: 1267774892}
+  m_Layer: 5
+  m_Name: "McNaldo\u2019s"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1267774891
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267774890}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1342038512}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000070151465, y: 10.640564}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1267774892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267774890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8564cc42670f8a444a656fb319f12ed9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0
+  propertyName: "McNaldo\u2019s"
+  Tags: []
+  baseWorth: 50
+  price: 0
+  morality: 0
+  influence: 0
+  environment: 0
+  Description: 
+  unbuyable: 1
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 678633339}
+        m_MethodName: AddProperty
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1267774892}
+          m_ObjectArgumentAssemblyTypeName: PropertyObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1316516190
 GameObject:
   m_ObjectHideFlags: 0
@@ -7952,6 +8169,7 @@ RectTransform:
   - {fileID: 914885253}
   - {fileID: 1023982379}
   - {fileID: 1597769939}
+  - {fileID: 1267774891}
   m_Father: {fileID: 1897197018}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8406,8 +8624,8 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Since you aren't very well known no one really cares what
-            the ad looks like, it still slightly hightens your influence.
+          m_StringArgument: Since you aren't very well known no one really cares
+            what the ad looks like, it still slightly hightens your influence.
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 465919748}
@@ -8505,11 +8723,12 @@ MonoBehaviour:
   minInfluence: 0
   maxEnvironment: 0
   maxMorality: 0
+  stage: 2
+  HappensOnce: 0
   previousEventsSecondOption: []
   previousEventsFirstOption: []
   SecondOptionSelected: 0
   hasHappened: 0
-  HappensOnce: 0
 --- !u!1 &1428013146
 GameObject:
   m_ObjectHideFlags: 0
@@ -9077,14 +9296,15 @@ MonoBehaviour:
   eventConsequences: 
   stringOption2: "I\u2019m not going to help, their bread is cardboard anyway."
   minIncome: 0
-  minInfluence: 40
+  minInfluence: 0
   maxEnvironment: 0
   maxMorality: 0
+  stage: 2
+  HappensOnce: 1
   previousEventsSecondOption: []
   previousEventsFirstOption: []
   SecondOptionSelected: 0
   hasHappened: 0
-  HappensOnce: 0
 --- !u!1 &1539131736
 GameObject:
   m_ObjectHideFlags: 0
@@ -9234,11 +9454,12 @@ MonoBehaviour:
   minInfluence: 0
   maxEnvironment: 0
   maxMorality: 0
+  stage: 2
+  HappensOnce: 1
   previousEventsSecondOption: []
   previousEventsFirstOption: []
   SecondOptionSelected: 0
   hasHappened: 0
-  HappensOnce: 0
 --- !u!1 &1567708708
 GameObject:
   m_ObjectHideFlags: 0
@@ -9532,6 +9753,7 @@ MonoBehaviour:
   influence: 0
   environment: 0
   Description: 
+  unbuyable: 0
   add:
     m_PersistentCalls:
       m_Calls:
@@ -9546,9 +9768,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  addtags:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1617522008
 GameObject:
   m_ObjectHideFlags: 0
@@ -10326,8 +10545,8 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Dionysus becomes insulted and starts a conference in which
-            he, the god of wine, tells the public that you hate wine.
+          m_StringArgument: Dionysus becomes insulted and starts a conference in
+            which he, the god of wine, tells the public that you hate wine.
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 164424959}
@@ -10354,11 +10573,12 @@ MonoBehaviour:
   minInfluence: 0
   maxEnvironment: 0
   maxMorality: 0
+  stage: 3
+  HappensOnce: 1
   previousEventsSecondOption: []
   previousEventsFirstOption: []
   SecondOptionSelected: 0
   hasHappened: 0
-  HappensOnce: 0
 --- !u!1 &1785242111
 GameObject:
   m_ObjectHideFlags: 0
@@ -10722,11 +10942,12 @@ MonoBehaviour:
   minInfluence: 0
   maxEnvironment: 0
   maxMorality: 0
+  stage: 2
+  HappensOnce: 0
   previousEventsSecondOption: []
   previousEventsFirstOption: []
   SecondOptionSelected: 0
   hasHappened: 0
-  HappensOnce: 0
 --- !u!1 &1801264980
 GameObject:
   m_ObjectHideFlags: 0
@@ -11545,6 +11766,7 @@ RectTransform:
   - {fileID: 1488704427}
   - {fileID: 1539131737}
   - {fileID: 185061186}
+  - {fileID: 223177700}
   m_Father: {fileID: 1567708709}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12394,11 +12616,12 @@ MonoBehaviour:
   minInfluence: 0
   maxEnvironment: 0
   maxMorality: 0
+  stage: 0
+  HappensOnce: 0
   previousEventsSecondOption: []
   previousEventsFirstOption: []
   SecondOptionSelected: 0
   hasHappened: 0
-  HappensOnce: 0
 --- !u!1 &2087118355
 GameObject:
   m_ObjectHideFlags: 0
