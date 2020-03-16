@@ -14,12 +14,12 @@ public class Stagemanager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(PropertyManager.UpgradeLevel == 0)
+        if(PropertyManager.UpgradeLevel == 1)
         {
             image1.SetActive(true);
             image2.SetActive(false);
         }
-        else if(PropertyManager.UpgradeLevel == 1)
+        else if(PropertyManager.UpgradeLevel == 2)
         {
             image1.SetActive(false);
             image2.SetActive(true);
