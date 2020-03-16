@@ -21,6 +21,11 @@ public class EventManager : MonoBehaviour
         currentEvent.hasHappened = true;
     }
 
+    public void SecondChoice()
+    {
+        currentEvent.SecondOptionSelected = true;
+    }
+
     //add event to the list of events
     public void AddEvent(EventObject eventObject)
     {

@@ -20,7 +20,7 @@ class PropertyManager : MonoBehaviour
     
     public static int PossibleProperties; //range of ids of the properties that the player can buy
     public static int PossibleResearch;
-    public static int UpgradeLevel = 0;//current gameStage
+    public static int UpgradeLevel = 1;//current gameStage
 
     
 
