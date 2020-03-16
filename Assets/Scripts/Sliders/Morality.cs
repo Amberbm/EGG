@@ -20,5 +20,24 @@ public class Morality : MonoBehaviour
     {
         value += num;
     }
-    
+
+
+    public void Moralitychangelow(int num)
+    {
+        if (Notificationmanager.low)
+            value += num;
+
+        if (value < -100)
+            value = -100;
+        if (value > 100)
+            value = 100;
+    }
+
+    public void Moralitychangehigh(int num)
+    {
+        if (Notificationmanager.high)
+            value += num;
+    }
+
+
 }

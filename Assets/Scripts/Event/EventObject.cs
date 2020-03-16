@@ -15,6 +15,7 @@ public class EventObject : MonoBehaviour
 
     public int id;
     public string eventDescription;
+    public string eventName;
     public string stringOption1;
     public string eventConsequences;
     public string stringOption2;
