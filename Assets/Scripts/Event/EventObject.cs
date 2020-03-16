@@ -45,9 +45,9 @@ public class EventObject : MonoBehaviour
             return false;
         if (Influence.value < minInfluence)
             return false;
-        if (Environment.value > maxEnvironment)
+        if (Environment.value > maxEnvironment && maxEnvironment != 0)
             return false;
-        if (Morality.value > maxMorality)
+        if (Morality.value > maxMorality && maxMorality != 0)
             return false;
         //checks for all required previous events weather they have happenedyet and if the rght choices were made
         foreach (EventObject previousEvent in previousEventsSecondOption) 

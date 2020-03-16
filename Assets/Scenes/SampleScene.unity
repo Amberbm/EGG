@@ -682,8 +682,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Your choice has made the CEO's very happy and they even
-            give you some bribes to stay silent. So you've profited, but at what
-            cost?
+            give you some bribes to stay silent. So you've profited, but at what cost?
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 164424959}
@@ -1648,12 +1647,11 @@ MonoBehaviour:
   maxEnvironment: 0
   maxMorality: 0
   stage: 3
-  HappensOnce: 1
   previousEventsSecondOption: []
-  previousEventsFirstOption:
-  - {fileID: 1488704428}
+  previousEventsFirstOption: []
   SecondOptionSelected: 0
   hasHappened: 0
+  HappensOnce: 1
 --- !u!1 &192694196
 GameObject:
   m_ObjectHideFlags: 0
@@ -2463,7 +2461,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 924731950}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3133,8 +3131,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -20, y: -20}
+  m_AnchoredPosition: {x: -0.000061035156, y: 5.0002003}
+  m_SizeDelta: {x: 183.33, y: 25.667}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &465919746
 MonoBehaviour:
@@ -4018,7 +4016,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 924731950}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4271,7 +4269,7 @@ GameObject:
   - component: {fileID: 633778669}
   - component: {fileID: 633778670}
   m_Layer: 5
-  m_Name: UpgradeObject (1)
+  m_Name: Upgrade 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4326,7 +4324,7 @@ MonoBehaviour:
   price: 50
   Influence: 10
   upgradeName: Bigger office
-  Description: Your ofice looks fancier
+  Description: Your ofice looks fancier, costs 50
 --- !u!1 &644867992
 GameObject:
   m_ObjectHideFlags: 0
@@ -4630,7 +4628,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 924731950}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -4650,7 +4648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 735966478}
-  extraincome: 0
+  extraincome: 50
 --- !u!114 &735966478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4842,8 +4840,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -29.23, y: -0.6504822}
-  m_SizeDelta: {x: 73.08, y: 1.3}
+  m_AnchoredPosition: {x: -30.634, y: -0.6504822}
+  m_SizeDelta: {x: 81.045, y: 1.3}
   m_Pivot: {x: -0.17631935, y: 0.5}
 --- !u!114 &744719666
 MonoBehaviour:
@@ -5468,7 +5466,7 @@ RectTransform:
   - {fileID: 1785242112}
   - {fileID: 953169913}
   m_Father: {fileID: 924731950}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -6053,6 +6051,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 1806309745}
   - {fileID: 587482162}
   - {fileID: 735966476}
   - {fileID: 1376664196}
@@ -6119,7 +6118,7 @@ MonoBehaviour:
   Data:
     Duration: 1
     Target: {fileID: 1785242112}
-    Position: -800
+    Position: -844
     Ease: 200
 --- !u!114 &953169915
 MonoBehaviour:
@@ -6150,7 +6149,7 @@ MonoBehaviour:
   Data:
     Duration: 1
     Target: {fileID: 1785242112}
-    Position: -709.8
+    Position: -750
     Ease: 250
 --- !u!1 &953454272
 GameObject:
@@ -7215,18 +7214,10 @@ MonoBehaviour:
         m_CallState: 2
   option1:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 465919748}
-        m_MethodName: High
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: [{m_Target: {fileID: 465919748}, m_MethodName: High, m_Mode: 5, m_Arguments: {
+            m_ObjectArgument: {fileID: 0}, m_ObjectArgumentAssemblyTypeName: 'UnityEngine.Object,
+              UnityEngine', m_IntArgument: 0, m_FloatArgument: 0, m_StringArgument: '',
+            m_BoolArgument: 0}, m_CallState: 2}]
   option2:
     m_PersistentCalls:
       m_Calls:
@@ -7311,8 +7302,8 @@ MonoBehaviour:
   id: 0
   eventName: Nigerian prince
   eventDescription: "You get an email from \u2018a far relative\u2019 from Nigeria
-    that announces his uncle, a prominent and rich person, has died and you have
-    the right to a big part of his inheritance. All you have to do is transfer 10.000$
+    that announces his uncle, a prominent and rich person, has died and you have the
+    right to a big part of his inheritance. All you have to do is transfer 10.000$
     to his bank account."
   stringOption1: "\u201CI\u2019m not sure if I have family in Africa\u201D"
   eventConsequences: 
@@ -8003,11 +7994,11 @@ RectTransform:
   - {fileID: 753703491}
   - {fileID: 1383031237}
   m_Father: {fileID: 924731950}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 234.5, y: -162.89}
+  m_AnchoredPosition: {x: 234.5, y: -228}
   m_SizeDelta: {x: 331, y: 124.21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1325756934
@@ -8042,12 +8033,12 @@ RectTransform:
   m_Children:
   - {fileID: 818972927}
   m_Father: {fileID: 924731950}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 130, y: 193}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 130, y: -34}
+  m_SizeDelta: {x: -640, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1325756936
 MonoBehaviour:
@@ -8350,7 +8341,7 @@ RectTransform:
   m_Children:
   - {fileID: 2121383103}
   m_Father: {fileID: 924731950}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8624,8 +8615,8 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Since you aren't very well known no one really cares
-            what the ad looks like, it still slightly hightens your influence.
+          m_StringArgument: Since you aren't very well known no one really cares what
+            the ad looks like, it still slightly hightens your influence.
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 465919748}
@@ -9491,7 +9482,7 @@ RectTransform:
   - {fileID: 829868398}
   - {fileID: 1896101038}
   m_Father: {fileID: 924731950}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9981,6 +9972,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1620523521}
   m_CullTransparentMesh: 0
+--- !u!1 &1620626077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1620626078}
+  - component: {fileID: 1620626080}
+  - component: {fileID: 1620626079}
+  m_Layer: 0
+  m_Name: Stage2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1620626078
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620626077}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.31737706, y: 0.31737706, z: 0.31737706}
+  m_Children: []
+  m_Father: {fileID: 1806309745}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -3, y: 242}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1620626079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620626077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: bbc4d3a1155b0934b8d65f56de6fe404, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1620626080
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620626077}
+  m_CullTransparentMesh: 0
 --- !u!1 &1632516256
 GameObject:
   m_ObjectHideFlags: 0
@@ -10332,6 +10396,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736923542}
   m_CullTransparentMesh: 0
+--- !u!1 &1740925256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1740925257}
+  - component: {fileID: 1740925259}
+  - component: {fileID: 1740925258}
+  m_Layer: 0
+  m_Name: Stage 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1740925257
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740925256}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.31737706, y: 0.31737706, z: 0.31737706}
+  m_Children: []
+  m_Father: {fileID: 1806309745}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -3, y: 242}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1740925258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740925256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 66076bc9c6783824d9586960ca398353, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1740925259
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740925256}
+  m_CullTransparentMesh: 0
 --- !u!1 &1765798669
 GameObject:
   m_ObjectHideFlags: 0
@@ -10545,8 +10682,8 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Dionysus becomes insulted and starts a conference in
-            which he, the god of wine, tells the public that you hate wine.
+          m_StringArgument: Dionysus becomes insulted and starts a conference in which
+            he, the god of wine, tells the public that you hate wine.
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 164424959}
@@ -10614,7 +10751,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 22, y: -800}
+  m_AnchoredPosition: {x: 15, y: -844}
   m_SizeDelta: {x: 550, y: 37}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &1788133899
@@ -11002,6 +11139,53 @@ MonoBehaviour:
     Target: {fileID: 709485412}
     Position: 340
     Ease: 100
+--- !u!1 &1806309744
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1806309745}
+  - component: {fileID: 1806309746}
+  m_Layer: 0
+  m_Name: StageManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1806309745
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806309744}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 15.723198, y: -302.10797, z: 0}
+  m_LocalScale: {x: 1.4787431, y: 1.4787431, z: 1.4787431}
+  m_Children:
+  - {fileID: 1740925257}
+  - {fileID: 1620626078}
+  m_Father: {fileID: 924731950}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1806309746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806309744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba0f7f41a728f114697aa7b7bf17fc2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image1: {fileID: 1740925256}
+  image2: {fileID: 1620626077}
 --- !u!1 &1811247308
 GameObject:
   m_ObjectHideFlags: 0
@@ -11811,7 +11995,7 @@ RectTransform:
   - {fileID: 1089225763}
   - {fileID: 2033924329}
   m_Father: {fileID: 924731950}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
