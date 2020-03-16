@@ -14,6 +14,7 @@ public class EventObject : MonoBehaviour
     public UnityEvent Option2 { get { if (option2 == null) option2 = new UnityEvent(); return option2; } } [SerializeField] private UnityEvent option2;
 
     public int id;
+    public string eventName;
     public string eventDescription;
     public string eventName;
     public string stringOption1;
