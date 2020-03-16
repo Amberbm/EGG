@@ -7,6 +7,11 @@ public class SelectResearch : MonoBehaviour
 {
     public static int SelectedResearch = 0;
 
+    void Start()
+    {
+        SetBuyList();
+    }
+
     //set the value of the dropdown in a static variable so it can be called in other classes
     public void SetSelected()
     {
