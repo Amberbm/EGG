@@ -19,7 +19,22 @@ public class Influence : MonoBehaviour
     public void ChangeValue(int num)
     {
         value += num;
+        if (value < 0)
+            value = 0;
+        if (value > 100)
+            value = 100;
     }
 
+    public void Influencechangelow(int num)
+    {
+        if (Notificationmanager.low)
+            value += num;
+    }
+
+    public void Influencechangehigh(int num)
+    {
+        if (Notificationmanager.high)
+            value += num;
+    }
 
 }

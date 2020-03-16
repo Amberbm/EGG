@@ -8,21 +8,58 @@ public class Notificationmanager : MonoBehaviour
 {
     public Text text;
     public string Consequences;
+    public static bool low, high;
 
     void Update()
     {
-        text.text = Consequences;
+            text.text = Consequences;
     }
+
     public void changeConsequences(string name)
     {
         Consequences = name;
     }
 
-    public void ConsequencesMorality(string name, string negname)
+    public void checkmorality(int num)
     {
-        if (Morality.value >= 0)
-            Consequences = name;
+        if (num >= Morality.value)
+        {
+            high = false;
+            low = true;
+        }
         else
-            Consequences = negname;
+        {
+            high = true;
+            low = false;
+        }
+
     }
+
+    public void checkinfluence(int num)
+    {
+        if (num >= Influence.value)
+        {
+            high = false;
+            low = true;
+        }
+        else
+        {
+            high = true;
+            low = false;
+        }
+    }
+
+    public void Low(string text)
+    {
+        if (low)
+            Consequences = text;
+    }
+
+    public void High(string text)
+    {
+        if (high)
+            Consequences = text;
+    }
+
+
 }

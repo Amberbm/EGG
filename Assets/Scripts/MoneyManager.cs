@@ -10,6 +10,7 @@ public class MoneyManager : MonoBehaviour
 {
     public static int amount=10; //total amount of money the player has
     public Text text;
+    public int extraincome; 
     public static int income = 0;
     float percentage;
 
@@ -44,9 +45,26 @@ public class MoneyManager : MonoBehaviour
         amount += (int)percentage;
     }
 
+    public void Moneychangelow(int num)
+    {
+        if (Notificationmanager.low)
+            amount += num;
+    }
+
+    public void Moneychangehigh(int num)
+    {
+        if (Notificationmanager.high)
+            amount += num;
+    }
+
+    public void ChangeIncome(int num)
+    {
+        extraincome += num;
+    }
+
     //set income tho the calulated worth of all owned properties
     public void SetIncome()//after each change
     {
-        income = PropertyManager.CalculateIncome();
+        income = PropertyManager.CalculateIncome() + extraincome;
     }
 }
