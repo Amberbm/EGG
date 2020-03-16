@@ -23,13 +23,15 @@ public class EventObject : MonoBehaviour
     public int minInfluence;
     public int maxEnvironment;
     public int maxMorality;
+    public int stage;
+    public bool HappensOnce;
     float percentage;
 
     public List<EventObject> previousEventsSecondOption ; // list of all previous events that need to have been occured before this event where the second option was selected can be shown
     public List<EventObject> previousEventsFirstOption; // list of all previous events that need to have been occured before this event where the First option was selected can be shown
     public bool SecondOptionSelected; //bool that states which option had been selected;
     public bool hasHappened;// bool that states weather the event has occured yet
-    public bool HappensOnce;
+    
 
     //bool to check whether an event voldoet aan de requirments to be shown as an event
     public bool EventRequirementsMeet()
@@ -37,6 +39,8 @@ public class EventObject : MonoBehaviour
         if (HappensOnce)
             if (hasHappened)
                 return false;
+        if (stage != PropertyManager.UpgradeLevel)
+            return false;
         if (MoneyManager.amount < minIncome )
             return false;
         if (Influence.value < minInfluence)
