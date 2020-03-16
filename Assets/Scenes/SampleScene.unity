@@ -246,7 +246,7 @@ GameObject:
   - component: {fileID: 31774689}
   - component: {fileID: 31774690}
   m_Layer: 5
-  m_Name: EventObject (2)
+  m_Name: Eggs 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -378,7 +378,11 @@ MonoBehaviour:
   eventConsequences: 
   stringOption2: Buy some more
   minIncome: 0
-  previousEventsSecondOption: []
+  minInfluence: 0
+  maxEnvironment: 0
+  maxMorality: 0
+  previousEventsSecondOption:
+  - {fileID: 441470643}
   previousEventsFirstOption: []
   SecondOptionSelected: 0
   hasHappened: 0
@@ -533,6 +537,214 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 97290157}
   m_CullTransparentMesh: 0
+--- !u!1 &102757613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 102757614}
+  - component: {fileID: 102757615}
+  m_Layer: 5
+  m_Name: World burn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &102757614
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102757613}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1896101038}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000030517578, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &102757615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102757613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 806e8acbfaac45a42af17b0b3c1af851, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 829868397}
+        m_MethodName: AddEvent
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 102757615}
+          m_ObjectArgumentAssemblyTypeName: EventObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  option1:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 864577344}
+        m_MethodName: Pulse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 465919748}
+        m_MethodName: changeConsequences
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Your unexpected choice angered the CEO's and they have
+            spread bad rumours about you. The forest still stands though.
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 888644771}
+        m_MethodName: ChangeValue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 20
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1007551148}
+        m_MethodName: ChangeValue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 20
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 164424959}
+        m_MethodName: ChangeValue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -20
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  option2:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 864577344}
+        m_MethodName: Pulse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 465919748}
+        m_MethodName: changeConsequences
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Your choice has made the CEO's very happy and they even
+            give you some bribes to stay silent. So you've profited, but at what
+            cost?
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 164424959}
+        m_MethodName: ChangeValue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 20
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 888644771}
+        m_MethodName: ChangeValue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -20
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1007551148}
+        m_MethodName: ChangeValue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -20
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 735966477}
+        m_MethodName: IncreaseFunds
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 20
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  id: 0
+  eventName: Some people just want to see the world burn
+  eventDescription: Thanks to your recent actions corporations have approached you
+    about burning a forest you happen to own for profit.
+  stringOption1: You decide to spare this forest.
+  eventConsequences: 
+  stringOption2: Burn it to the ground.
+  minIncome: 0
+  minInfluence: 0
+  maxEnvironment: -40
+  maxMorality: -20
+  previousEventsSecondOption: []
+  previousEventsFirstOption: []
+  SecondOptionSelected: 0
+  hasHappened: 0
+  HappensOnce: 0
 --- !u!1 &113133215
 GameObject:
   m_ObjectHideFlags: 0
@@ -1261,6 +1473,184 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &185061185
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 185061186}
+  - component: {fileID: 185061187}
+  m_Layer: 5
+  m_Name: Melon Usk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &185061186
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185061185}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1896101038}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &185061187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185061185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 806e8acbfaac45a42af17b0b3c1af851, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 829868397}
+        m_MethodName: AddEvent
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 185061187}
+          m_ObjectArgumentAssemblyTypeName: EventObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  option1:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 864577344}
+        m_MethodName: Pulse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 465919748}
+        m_MethodName: changeConsequences
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Invest in the project and choose to add an advanced radio
+            telescope to the satellite on board. This will be a huge boon for the
+            scientific community, as a result they will support you.
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 735966477}
+        m_MethodName: IncreaseFunds
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -20
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 164424959}
+        m_MethodName: ChangeValue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 30
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  option2:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 864577344}
+        m_MethodName: Pulse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 465919748}
+        m_MethodName: changeConsequences
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: The team makes a breakthrough and this greatly improves
+            the environment.
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 735966477}
+        m_MethodName: IncreaseFunds
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -20
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 888644771}
+        m_MethodName: ChangeValue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 30
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  id: 0
+  eventName: Meeting with Melon Usk.
+  eventDescription: You get a chance meeting with the billionaire Melon Usk. He tells
+    you about a plan to launch something into space and asks you what that something
+    should be. What will you choose?
+  stringOption1: 'A radio Telescope, so we can research the universe. '
+  eventConsequences: 
+  stringOption2: A team of researches who will spend time figuring out how to improve
+    our environment by looking at other planets.
+  minIncome: 20
+  minInfluence: 0
+  maxEnvironment: 0
+  maxMorality: 0
+  previousEventsSecondOption: []
+  previousEventsFirstOption:
+  - {fileID: 1488704428}
+  SecondOptionSelected: 0
+  hasHappened: 0
+  HappensOnce: 0
 --- !u!1 &192694196
 GameObject:
   m_ObjectHideFlags: 0
@@ -2425,7 +2815,7 @@ GameObject:
   - component: {fileID: 441470642}
   - component: {fileID: 441470643}
   m_Layer: 5
-  m_Name: EventObject (1)
+  m_Name: Eggs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2500,6 +2890,9 @@ MonoBehaviour:
   eventConsequences: 
   stringOption2: Invest in the future
   minIncome: 0
+  minInfluence: 0
+  maxEnvironment: 0
+  maxMorality: 0
   previousEventsSecondOption: []
   previousEventsFirstOption: []
   SecondOptionSelected: 0
@@ -2637,8 +3030,8 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 0
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
     m_LineSpacing: 0.75
   m_Text: 'This is a notification! '
 --- !u!222 &465919747
@@ -4112,6 +4505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 735966478}
+  extraincome: 0
 --- !u!114 &735966478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4936,6 +5330,161 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -0.000030517578}
   m_SizeDelta: {x: 319.36, y: 219.11499}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &877002305
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 877002306}
+  - component: {fileID: 877002307}
+  m_Layer: 5
+  m_Name: Friends
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &877002306
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877002305}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1896101038}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &877002307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877002305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 806e8acbfaac45a42af17b0b3c1af851, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 829868397}
+        m_MethodName: AddEvent
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 877002307}
+          m_ObjectArgumentAssemblyTypeName: EventObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  option1:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 864577344}
+        m_MethodName: Pulse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 465919748}
+        m_MethodName: changeConsequences
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "You spend the next hours alone, working on your computer.
+            Before you realize it, it\u2019s already midnight."
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 735966477}
+        m_MethodName: IncreaseFunds
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  option2:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 864577344}
+        m_MethodName: Pulse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 465919748}
+        m_MethodName: changeConsequences
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Your friends appreciate that you took some time off of
+            work to hang out with them.
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1007551148}
+        m_MethodName: ChangeValue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  id: 0
+  eventName: Hang out with your friends
+  eventDescription: 'You want to hang out with your friends to relieve some of your
+    stress, but hanging out with your friends means skipping work for a few hours.
+    What do you do? '
+  stringOption1: "Friends? What do you mean \u2018friends\u2019? I don\u2019t have
+    any. I\u2019ll just continue working thank you very much! "
+  eventConsequences: 
+  stringOption2: "I haven\u2019t seen my friends for some time now. It would be nice
+    to reconnect with them. "
+  minIncome: 0
+  minInfluence: 0
+  maxEnvironment: 0
+  maxMorality: 0
+  previousEventsSecondOption: []
+  previousEventsFirstOption: []
+  SecondOptionSelected: 0
+  hasHappened: 0
+  HappensOnce: 0
 --- !u!1 &880718928
 GameObject:
   m_ObjectHideFlags: 0
@@ -6471,7 +7020,7 @@ GameObject:
   - component: {fileID: 1113731632}
   - component: {fileID: 1113731633}
   m_Layer: 5
-  m_Name: EventObject (3)
+  m_Name: Nigerian Prince
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6540,18 +7089,74 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 465919748}
-        m_MethodName: changeConsequences
+        m_MethodName: checkmorality
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 50
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 465919748}
+        m_MethodName: Low
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
+          m_StringArgument: You lose the money and feel stupid.
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 465919748}
+        m_MethodName: Low
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: You transfer the money and get extra morale and a lot
+            of money.
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 735966477}
+        m_MethodName: Moneychangelow
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -20
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 735966477}
+        m_MethodName: Moneychangehigh
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 30
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1007551148}
+        m_MethodName: Moralitychangehigh
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
   id: 0
-  eventName: 
+  eventName: Nigerian prince
   eventDescription: "You get an email from \u2018a far relative\u2019 from Nigeria
     that announces his uncle, a prominent and rich person, has died and you have
     the right to a big part of his inheritance. All you have to do is transfer 10.000$
@@ -6559,7 +7164,10 @@ MonoBehaviour:
   stringOption1: "\u201CI\u2019m not sure if I have family in Africa\u201D"
   eventConsequences: 
   stringOption2: You are excited to get in touch with your eggstended family
-  minIncome: 0
+  minIncome: 20
+  minInfluence: 0
+  maxEnvironment: 0
+  maxMorality: 0
   previousEventsSecondOption: []
   previousEventsFirstOption: []
   SecondOptionSelected: 0
@@ -7694,6 +8302,205 @@ RectTransform:
   m_AnchoredPosition: {x: -0.000015258789, y: 17}
   m_SizeDelta: {x: 331, y: 28.3}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1419399007
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1419399008}
+  - component: {fileID: 1419399009}
+  m_Layer: 5
+  m_Name: Weebs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1419399008
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419399007}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1896101038}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1419399009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419399007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 806e8acbfaac45a42af17b0b3c1af851, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 829868397}
+        m_MethodName: AddEvent
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1419399009}
+          m_ObjectArgumentAssemblyTypeName: EventObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  option1:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 864577344}
+        m_MethodName: Pulse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 465919748}
+        m_MethodName: checkinfluence
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 50
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 465919748}
+        m_MethodName: Low
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Since you aren't very well known no one really cares
+            what the ad looks like, it still slightly hightens your influence.
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 465919748}
+        m_MethodName: High
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: You are quite well known and someone leaks that you turned
+            down the animated add, the weeb community becomes angry and starts flaming
+            you online.
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 735966477}
+        m_MethodName: IncreaseFunds
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 164424959}
+        m_MethodName: Influencechangehigh
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 164424959}
+        m_MethodName: Influencechangelow
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  option2:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 864577344}
+        m_MethodName: Pulse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 465919748}
+        m_MethodName: changeConsequences
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: The weeb community is happy with your choice and becomes
+            interested in your products.
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 164424959}
+        m_MethodName: ChangeValue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  id: 0
+  eventName: Rise of the weebs!
+  eventDescription: "You have the opportunity to make an animated (yes in anime style)
+    commercial. Will you satisfy the weeb community or will you go for a more \u201Cnormal\u201D
+    add."
+  stringOption1: " I\u2019d rather not become associated with the bottom of society... "
+  eventConsequences: 
+  stringOption2: 'Heck yeah! Naruto is my jam! '
+  minIncome: 20
+  minInfluence: 0
+  maxEnvironment: 0
+  maxMorality: 0
+  previousEventsSecondOption: []
+  previousEventsFirstOption: []
+  SecondOptionSelected: 0
+  hasHappened: 0
+  HappensOnce: 0
 --- !u!1 &1428013146
 GameObject:
   m_ObjectHideFlags: 0
@@ -8109,6 +8916,320 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458728927}
   m_CullTransparentMesh: 0
+--- !u!1 &1488704426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1488704427}
+  - component: {fileID: 1488704428}
+  m_Layer: 5
+  m_Name: Bakery Bard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1488704427
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488704426}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1896101038}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1488704428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488704426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 806e8acbfaac45a42af17b0b3c1af851, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 829868397}
+        m_MethodName: AddEvent
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1488704428}
+          m_ObjectArgumentAssemblyTypeName: EventObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  option1:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 864577344}
+        m_MethodName: Pulse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 465919748}
+        m_MethodName: changeConsequences
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Bakery Bard is very glad and will pay interest over time.
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 735966477}
+        m_MethodName: ChangeIncome
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 735966477}
+        m_MethodName: IncreaseFunds
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -30
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  option2:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 864577344}
+        m_MethodName: Pulse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 465919748}
+        m_MethodName: changeConsequences
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Bakery Bard has to shut down and blames you on twitter.
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 164424959}
+        m_MethodName: ChangeValue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  id: 0
+  eventName: Bakery Bard
+  eventDescription: 'Bakery Bard wants to expand their bread empire. '
+  stringOption1: Fund them, their bread is good.
+  eventConsequences: 
+  stringOption2: "I\u2019m not going to help, their bread is cardboard anyway."
+  minIncome: 0
+  minInfluence: 40
+  maxEnvironment: 0
+  maxMorality: 0
+  previousEventsSecondOption: []
+  previousEventsFirstOption: []
+  SecondOptionSelected: 0
+  hasHappened: 0
+  HappensOnce: 0
+--- !u!1 &1539131736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1539131737}
+  - component: {fileID: 1539131738}
+  m_Layer: 5
+  m_Name: Moving out
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1539131737
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539131736}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1896101038}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1539131738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539131736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 806e8acbfaac45a42af17b0b3c1af851, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 829868397}
+        m_MethodName: AddEvent
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1539131738}
+          m_ObjectArgumentAssemblyTypeName: EventObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  option1:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 864577344}
+        m_MethodName: Pulse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 465919748}
+        m_MethodName: changeConsequences
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: You find a grateful buyer who seems happy with the new
+            house.
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 735966477}
+        m_MethodName: IncreaseFunds
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 40
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  option2:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 864577344}
+        m_MethodName: Pulse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 465919748}
+        m_MethodName: changeConsequences
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: You manage to find a group of grateful students to whom
+            you rent the house.
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 735966477}
+        m_MethodName: ChangeIncome
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  id: 0
+  eventName: Moving out
+  eventDescription: 'You are moving into a new home and office, your old house still
+    belongs to you. '
+  stringOption1: 'Not going to use this anymore, at least want to get something out
+    of it. '
+  eventConsequences: 
+  stringOption2: "I can use this place to earn myself more money in the long run.
+    I\u2019ll use this property for profit!"
+  minIncome: 20
+  minInfluence: 0
+  maxEnvironment: 0
+  maxMorality: 0
+  previousEventsSecondOption: []
+  previousEventsFirstOption: []
+  SecondOptionSelected: 0
+  hasHappened: 0
+  HappensOnce: 0
 --- !u!1 &1567708708
 GameObject:
   m_ObjectHideFlags: 0
@@ -9052,6 +10173,183 @@ MonoBehaviour:
   morality: 0
   influence: 3
   environment: 0
+--- !u!1 &1775019059
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1775019060}
+  - component: {fileID: 1775019061}
+  m_Layer: 5
+  m_Name: Wine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1775019060
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775019059}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1896101038}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1775019061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775019059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 806e8acbfaac45a42af17b0b3c1af851, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 829868397}
+        m_MethodName: AddEvent
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1775019061}
+          m_ObjectArgumentAssemblyTypeName: EventObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  option1:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 864577344}
+        m_MethodName: Pulse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 465919748}
+        m_MethodName: checkinfluence
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 20
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 465919748}
+        m_MethodName: Low
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: The wine is very good, but you don't have the influence
+            to make it big. You only get back what you paid for the wine.
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 465919748}
+        m_MethodName: High
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: The wine is very good, and thanks to your connections
+            it spreads everywhere. You earn a lot of money!
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 735966477}
+        m_MethodName: IncreaseFunds
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 20
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  option2:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 864577344}
+        m_MethodName: Pulse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 465919748}
+        m_MethodName: changeConsequences
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Dionysus becomes insulted and starts a conference in
+            which he, the god of wine, tells the public that you hate wine.
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 164424959}
+        m_MethodName: ChangeValue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  id: 0
+  eventName: Favor for Dionysus, the god of exquisite wine.
+  eventDescription: 'Dionysus has contacted you to promote his new wine collection.
+    You are however not certain if his product will benefit you. Will you promote
+    his product? '
+  stringOption1: Yes, why would I ever doubt the literal god of wine?
+  eventConsequences: 
+  stringOption2: 'Ew no, I will not promote a product that is the equivalent of drinkable
+    dirt. '
+  minIncome: 0
+  minInfluence: 0
+  maxEnvironment: 0
+  maxMorality: 0
+  previousEventsSecondOption: []
+  previousEventsFirstOption: []
+  SecondOptionSelected: 0
+  hasHappened: 0
+  HappensOnce: 0
 --- !u!1 &1785242111
 GameObject:
   m_ObjectHideFlags: 0
@@ -9245,6 +10543,181 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 278653094}
   Description: {fileID: 152117295}
+--- !u!1 &1790817474
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1790817475}
+  - component: {fileID: 1790817476}
+  m_Layer: 5
+  m_Name: Fifanite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1790817475
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790817474}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1896101038}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1790817476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790817474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 806e8acbfaac45a42af17b0b3c1af851, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 829868397}
+        m_MethodName: AddEvent
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1790817476}
+          m_ObjectArgumentAssemblyTypeName: EventObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  option1:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 864577344}
+        m_MethodName: Pulse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 465919748}
+        m_MethodName: changeConsequences
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: The game sells great! However, future game developers
+            will now make games the same way, so you ruined the future of gaming.
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 735966477}
+        m_MethodName: IncreaseFunds
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 20
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1007551148}
+        m_MethodName: ChangeValue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  option2:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 864577344}
+        m_MethodName: Pulse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 465919748}
+        m_MethodName: changeConsequences
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: The game doesn't do well, AE blames you and makes sure
+            others know that. You did save the future of gaming!
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 164424959}
+        m_MethodName: ChangeValue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1007551148}
+        m_MethodName: ChangeValue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 20
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  id: 0
+  eventName: Fifanite
+  eventDescription: 'AE Games wants to make the football battle royale Fifanite and
+    they want your financial backing. '
+  stringOption1: 'AAA games always sell, no matter how shitty they are, I''ll invest. '
+  eventConsequences: 
+  stringOption2: 'Again with the crappy battle royale games and with football this
+    time? This won''t work at all, I won''t invest. '
+  minIncome: 0
+  minInfluence: 0
+  maxEnvironment: 0
+  maxMorality: 0
+  previousEventsSecondOption: []
+  previousEventsFirstOption: []
+  SecondOptionSelected: 0
+  hasHappened: 0
+  HappensOnce: 0
 --- !u!1 &1801264980
 GameObject:
   m_ObjectHideFlags: 0
@@ -10044,6 +11517,14 @@ RectTransform:
   - {fileID: 441470642}
   - {fileID: 31774689}
   - {fileID: 1113731632}
+  - {fileID: 1419399008}
+  - {fileID: 1775019060}
+  - {fileID: 1790817475}
+  - {fileID: 877002306}
+  - {fileID: 102757614}
+  - {fileID: 1488704427}
+  - {fileID: 1539131737}
+  - {fileID: 185061186}
   m_Father: {fileID: 1567708709}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10890,6 +12371,9 @@ MonoBehaviour:
   eventConsequences: 
   stringOption2: 
   minIncome: 0
+  minInfluence: 0
+  maxEnvironment: 0
+  maxMorality: 0
   previousEventsSecondOption: []
   previousEventsFirstOption: []
   SecondOptionSelected: 0
