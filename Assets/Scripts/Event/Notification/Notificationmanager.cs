@@ -12,7 +12,7 @@ public class Notificationmanager : MonoBehaviour
 
     void Update()
     {
-            text.text = Consequences;
+        text.text = Consequences;
     }
 
     public void changeConsequences(string name)
