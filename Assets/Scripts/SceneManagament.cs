@@ -6,13 +6,13 @@ using UnityEngine.UI;
 
 public class SceneManagament : MonoBehaviour
 {
-    public bool firstime = true;
+    static bool firstime;
     public void StartGame()
     {
-        if (firstime)
+        if (!firstime)
         {
             SceneManager.LoadScene("Intro");
-            firstime = false;
+            firstime = true;
         }
         else
             SceneManager.LoadScene("SampleScene");
