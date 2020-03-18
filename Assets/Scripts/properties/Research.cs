@@ -18,12 +18,16 @@ public class Research : MonoBehaviour
     public int morality;
     public int influence;
     public int environment;
-
+    bool gameJustStarted = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        Add.Invoke();
+        if (gameJustStarted)
+        {
+            Add.Invoke();
+            gameJustStarted = false;
+        }
     }
 
     public bool RequirmentsMeet()

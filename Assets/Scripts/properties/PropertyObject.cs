@@ -19,6 +19,7 @@ public class PropertyObject : MonoBehaviour
 
     public string Description;
     public bool unbuyable;
+    bool gameJustStarted = true;
    
     //event to add property to the list of all existing properties
     public UnityEvent Add { get { if (add == null) add = new UnityEvent(); return add; } }[SerializeField] private UnityEvent add;
@@ -28,7 +29,11 @@ public class PropertyObject : MonoBehaviour
     // add propertie to list of all existing kinds of properties
     void Start()
     {
-        Add.Invoke();
+        if (gameJustStarted)
+        {
+            Add.Invoke();
+            gameJustStarted = false;
+        }
     }
 
     public void AddTag(Tag tag)

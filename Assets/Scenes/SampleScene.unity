@@ -655,8 +655,8 @@ MonoBehaviour:
   id: 0
   eventName: Ice cream factory
   eventDescription: An opportunity to buy an ice cream factory for only 25 arrives.
-    The previous owner is a very rich man with a top hat but no one knows how he got
-    so rich.
+    The previous owner is a very rich man with a top hat but no one knows how he
+    got so rich.
   stringOption1: You decide to buy the factory because it is very profitable.
   eventConsequences: 
   stringOption2: "\u201CThe owner seems a bit shady so maybe it\u2019s best i dont
@@ -911,7 +911,8 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Your choice has made the CEO's very happy and they even
-            give you some bribes to stay silent. So you've profited, but at what cost?
+            give you some bribes to stay silent. So you've profited, but at what
+            cost?
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 164424959}
@@ -3400,69 +3401,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.000025510788, y: -1.5500507}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &371736723
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 371736725}
-  - component: {fileID: 371736724}
-  m_Layer: 5
-  m_Name: Notification (LeanPulse)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &371736724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 371736723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fdf9a6ea50fc2c4496205af91d278e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  remainingPulses: 0
-  remainingTime: 0
-  timeInterval: 1
-  timing: 0
-  pulseTransitions:
-    speed: 0
-    roots:
-    - {fileID: 2064237386}
-    aliases: []
-    targets: []
-  onPulse:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!224 &371736725
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 371736723}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.71468955, y: 0.71468955, z: 0.71468955}
-  m_Children:
-  - {fileID: 894979573}
-  - {fileID: 2064237386}
-  m_Father: {fileID: 226373298}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000091552734, y: -573.2001}
-  m_SizeDelta: {x: 424.56, y: 332.41498}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &360285954
 GameObject:
   m_ObjectHideFlags: 0
@@ -3538,6 +3476,69 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &371736723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 371736725}
+  - component: {fileID: 371736724}
+  m_Layer: 5
+  m_Name: Notification (LeanPulse)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &371736724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371736723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdf9a6ea50fc2c4496205af91d278e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  remainingPulses: 0
+  remainingTime: 0
+  timeInterval: 1
+  timing: 0
+  pulseTransitions:
+    speed: 0
+    roots:
+    - {fileID: 2064237386}
+    aliases: []
+    targets: []
+  onPulse:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!224 &371736725
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371736723}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.71468955, y: 0.71468955, z: 0.71468955}
+  m_Children:
+  - {fileID: 894979573}
+  - {fileID: 2064237386}
+  m_Father: {fileID: 226373298}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.000091552734, y: -573.2001}
+  m_SizeDelta: {x: 424.56, y: 332.41498}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &376787833
 GameObject:
   m_ObjectHideFlags: 0
@@ -4576,8 +4577,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1788133904}
-        m_MethodName: SetProperty
+      - m_Target: {fileID: 324316120}
+        m_MethodName: SetResearch
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10085,8 +10086,8 @@ MonoBehaviour:
   id: 0
   eventName: Nigerian prince
   eventDescription: "You get an email from \u2018a far relative\u2019 from Nigeria
-    that announces his uncle, a prominent and rich person, has died and you have the
-    right to a big part of his inheritance. All you have to do is transfer 10.000$
+    that announces his uncle, a prominent and rich person, has died and you have
+    the right to a big part of his inheritance. All you have to do is transfer 10.000$
     to his bank account."
   stringOption1: "\u201CI\u2019m not sure if I have family in Africa\u201D"
   eventConsequences: 
@@ -12151,8 +12152,8 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Since you aren't very well known no one really cares what
-            the ad looks like, it still slightly hightens your influence.
+          m_StringArgument: Since you aren't very well known no one really cares
+            what the ad looks like, it still slightly hightens your influence.
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 465919748}
@@ -14735,8 +14736,8 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Dionysus becomes insulted and starts a conference in which
-            he, the god of wine, tells the public that you hate wine.
+          m_StringArgument: Dionysus becomes insulted and starts a conference in
+            which he, the god of wine, tells the public that you hate wine.
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 164424959}
@@ -17140,8 +17141,8 @@ MonoBehaviour:
   morality: 40
   influence: 20
   environment: 10
-  Description: Help fund an actual charity! Won't give you any money but will be sure
-    to earn respect and morality!
+  Description: Help fund an actual charity! Won't give you any money but will be
+    sure to earn respect and morality!
   unbuyable: 0
   add:
     m_PersistentCalls:

@@ -12,10 +12,15 @@ public class Tag : MonoBehaviour
 
     public string tagName;
     public float InfluenceFactor =1;
+    bool gameJustStarted = true;
 
     void Start()//at the start
     {
-        AddTag.Invoke();
+        if (gameJustStarted)
+        {
+            AddTag.Invoke();
+            gameJustStarted = false;
+        }
     }
 
 

@@ -14,12 +14,17 @@ public class Upgrade : MonoBehaviour
     public int Influence;
     public string upgradeName;
     public string Description;
+    bool gameJustStarted = true;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        Add.Invoke();
+        if (gameJustStarted)
+        {
+            Add.Invoke();
+            gameJustStarted = false;
+        }
     }
     
 }

@@ -59,10 +59,16 @@ public class EventObject : MonoBehaviour
         return true;
     }
 
+
+    bool gameJustStarted = true;
     // Start is called before the first frame update
     //add the event to the eventlist in the eventmanager
     void Start()
     {
-        Add.Invoke();
+        if (gameJustStarted)
+        {
+            Add.Invoke();
+            gameJustStarted = false;
+        }
     }
 }
