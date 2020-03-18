@@ -655,8 +655,8 @@ MonoBehaviour:
   id: 0
   eventName: Ice cream factory
   eventDescription: An opportunity to buy an ice cream factory for only 25 arrives.
-    The previous owner is a very rich man with a top hat but no one knows how he got
-    so rich.
+    The previous owner is a very rich man with a top hat but no one knows how he
+    got so rich.
   stringOption1: You decide to buy the factory because it is very profitable.
   eventConsequences: 
   stringOption2: "\u201CThe owner seems a bit shady so maybe it\u2019s best i dont
@@ -1043,7 +1043,8 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Your choice has made the CEO's very happy and they even
-            give you some bribes to stay silent. So you've profited, but at what cost?
+            give you some bribes to stay silent. So you've profited, but at what
+            cost?
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 164424959}
@@ -2373,8 +2374,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   title: "It has become harder and harder for small one person only businesses to
-    succeed, the recent crash in the market isn\u2019t helping. It will not be a good
-    time to invest into homemade businesses. "
+    succeed, the recent crash in the market isn\u2019t helping. It will not be a
+    good time to invest into homemade businesses. "
   tag: HomeMade
   factor: 0.5
 --- !u!1 &223177699
@@ -2522,7 +2523,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &226373298
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4636,7 +4637,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &489426093
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6330,7 +6331,7 @@ MonoBehaviour:
   price: 50
   Influence: 10
   upgradeName: Bigger office
-  Description: Your ofice looks fancier, costs 50
+  Description: Your Office looks fancier, costs 50
 --- !u!1 &637388707
 GameObject:
   m_ObjectHideFlags: 0
@@ -10944,8 +10945,8 @@ MonoBehaviour:
   id: 0
   eventName: Nigerian prince
   eventDescription: "You get an email from \u2018a far relative\u2019 from Nigeria
-    that announces his uncle, a prominent and rich person, has died and you have the
-    right to a big part of his inheritance. All you have to do is transfer 10.000$
+    that announces his uncle, a prominent and rich person, has died and you have
+    the right to a big part of his inheritance. All you have to do is transfer 10.000$
     to his bank account."
   stringOption1: "\u201CI\u2019m not sure if I have family in Africa\u201D"
   eventConsequences: 
@@ -11537,8 +11538,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  title: 'There is a boom of people wanting to support people on sites like etsy or
-    patreon, increasing the profit of homemade things. '
+  title: 'There is a boom of people wanting to support people on sites like etsy
+    or patreon, increasing the profit of homemade things. '
   tag: HomeMade
   factor: 1.5
 --- !u!1 &1257010273
@@ -13181,8 +13182,8 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Since you aren't very well known no one really cares what
-            the ad looks like, it still slightly hightens your influence.
+          m_StringArgument: Since you aren't very well known no one really cares
+            what the ad looks like, it still slightly hightens your influence.
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 465919748}
@@ -14281,7 +14282,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1567708709
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15963,8 +15964,8 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Dionysus becomes insulted and starts a conference in which
-            he, the god of wine, tells the public that you hate wine.
+          m_StringArgument: Dionysus becomes insulted and starts a conference in
+            which he, the god of wine, tells the public that you hate wine.
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 164424959}
@@ -17611,7 +17612,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1886734784
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18500,8 +18501,8 @@ MonoBehaviour:
   morality: 40
   influence: 20
   environment: 10
-  Description: Help fund an actual charity! Won't give you any money but will be sure
-    to earn respect and morality!
+  Description: Help fund an actual charity! Won't give you any money but will be
+    sure to earn respect and morality!
   unbuyable: 0
   add:
     m_PersistentCalls:
