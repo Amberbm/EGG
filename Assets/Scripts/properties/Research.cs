@@ -41,7 +41,7 @@ public class Research : MonoBehaviour
     {
         Environment.value += environment;
         Influence.value += influence;
-        Morality.value += morality - (int)((float)environment * Environment.value * 0.01f);
+        Morality.value += morality;// - (int)((float)environment * Environment.value * 0.01f);
         MoneyManager.amount -= price;
     }
 
