@@ -23,7 +23,7 @@ public class SceneManagament : MonoBehaviour
 
     public void EndGame()
     {
-        if(DayCounter.dayCount == 10)
+        if(DayCounter.dayCount == 20)
         {
             if (MoneyManager.amount >= 1000)
                 SceneManager.LoadScene("GoodEnd scene");
