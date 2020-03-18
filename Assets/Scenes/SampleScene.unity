@@ -666,7 +666,7 @@ MonoBehaviour:
   maxEnvironment: 0
   maxMorality: 0
   stage: 1
-  HappensOnce: 0
+  HappensOnce: 1
   previousEventsSecondOption: []
   previousEventsFirstOption: []
   SecondOptionSelected: 0
@@ -6927,7 +6927,7 @@ MonoBehaviour:
   Tags:
   - Mechanical
   - Corporation
-  baseWorth: 15
+  baseWorth: 10
   price: 35
   morality: -5
   influence: 10
@@ -7001,8 +7001,8 @@ MonoBehaviour:
   propertyName: Big MMO
   Tags:
   - Entertainment
-  baseWorth: 5
-  price: 12
+  baseWorth: 6
+  price: 20
   morality: 10
   influence: 0
   environment: 0
@@ -11688,7 +11688,7 @@ MonoBehaviour:
   maxEnvironment: 0
   maxMorality: 0
   stage: 2
-  HappensOnce: 0
+  HappensOnce: 1
   previousEventsSecondOption: []
   previousEventsFirstOption:
   - {fileID: 81654007}
@@ -11838,7 +11838,7 @@ MonoBehaviour:
   Tags:
   - Fast food
   - Food
-  baseWorth: 50
+  baseWorth: 20
   price: 0
   morality: 0
   influence: 0
@@ -11911,7 +11911,7 @@ MonoBehaviour:
   propertyName: School
   Tags:
   - Educational
-  baseWorth: 10
+  baseWorth: 7
   price: 25
   morality: 20
   influence: 10
@@ -14090,7 +14090,7 @@ MonoBehaviour:
   Tags:
   - Corporation
   - Mechanical
-  baseWorth: 10
+  baseWorth: 8
   price: 25
   morality: 10
   influence: 0
@@ -14551,12 +14551,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-  propertyName: Fancy Hotdog Stand
+  propertyName: Hotdog Stand
   Tags:
-  - Fancy
-  - Fast food
   - Food
-  baseWorth: 7
+  - Fast food
+  baseWorth: 5
   price: 20
   morality: 7
   influence: 0
@@ -15815,7 +15814,7 @@ MonoBehaviour:
         m_CallState: 2
   id: 0
   ResearchName: Influence
-  Description: Research the way too get power
+  Description: Research the way to get power
   price: 10
   morality: 0
   influence: 10
@@ -16051,7 +16050,7 @@ MonoBehaviour:
   Tags:
   - Corporation
   - Donation
-  baseWorth: 30
+  baseWorth: 20
   price: 50
   morality: -40
   influence: 20
