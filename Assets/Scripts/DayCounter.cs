@@ -15,7 +15,7 @@ public class DayCounter : MonoBehaviour
         dayCount++;
         text.text = "Days: " + dayCount;
 
-        if (dayCount == 10)
+        if (dayCount == 20)
             finish = true;
     }
 }
