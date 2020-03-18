@@ -20,4 +20,15 @@ public class SceneManagament : MonoBehaviour
     {
         SceneManager.LoadScene("Starting scene");
     }
+
+    public void EndGame()
+    {
+        if(DayCounter.dayCount == 10)
+        {
+            if (MoneyManager.amount >= 1000)
+                SceneManager.LoadScene("GoodEnd scene");
+            if (MoneyManager.amount < 1000)
+                SceneManager.LoadScene("BadEnd scene");
+        }
+    }
 }

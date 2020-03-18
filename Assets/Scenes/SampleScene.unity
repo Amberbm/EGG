@@ -4157,6 +4157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 587482160}
+  finish: 0
 --- !u!114 &587482160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4989,7 +4990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 735966478}
-  extraincome: 50
+  extraincome: 0
 --- !u!114 &735966478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8929,6 +8930,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 333841070}
         m_MethodName: SetChanges
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 220434445}
+        m_MethodName: EndGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

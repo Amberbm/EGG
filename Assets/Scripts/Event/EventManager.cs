@@ -15,7 +15,6 @@ public class EventManager : MonoBehaviour
     public int PossibleEvents; //range of the id's of the events which requirments meet
     public static EventObject currentEvent; //the event that eventually was chosen to be shown
     
-    
     public void EventHappened()
     {
         currentEvent.hasHappened = true;
@@ -35,8 +34,6 @@ public class EventManager : MonoBehaviour
     //on every 10th day check which events meet the requirements and pick one of these to show in the screen
     public void ManageEvents()//after each turn
     {
-        if (DayCounter.dayCount % 10 == 0)
-        {
             PossibleEvents = 0;
             foreach (EventObject eventObject in AllEvents)
             {
@@ -52,7 +49,7 @@ public class EventManager : MonoBehaviour
             int ChosenEvent = (int)(Random.Range(0f, max));
             currentEvent = AllEvents.Find(i => i.id == ChosenEvent);
             ShowEvent.Invoke();
-        }
+        
     }
 
 

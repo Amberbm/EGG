@@ -7,11 +7,15 @@ public class DayCounter : MonoBehaviour
 {
     static public int dayCount = 1;
     public Text text;
+    public bool finish;
 
     
     public void NextDay()//after each turn
     {
         dayCount++;
         text.text = "Days: " + dayCount;
+
+        if (dayCount == 10)
+            finish = true;
     }
 }

@@ -42,6 +42,7 @@ class PropertyManager : MonoBehaviour
     {
         tags.Add(tag);
     }
+    
 
     public void AddResearch(Research research)
     {
