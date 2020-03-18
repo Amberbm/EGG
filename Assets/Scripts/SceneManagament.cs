@@ -6,9 +6,16 @@ using UnityEngine.UI;
 
 public class SceneManagament : MonoBehaviour
 {
+    bool firstime = true;
     public void StartGame()
     {
-        SceneManager.LoadScene("SampleScene");
+        if (firstime)
+        {
+            SceneManager.LoadScene("Intro");
+            firstime = false;
+        }
+        else
+            SceneManager.LoadScene("SampleScene");
     }
 
     public void Settings()
