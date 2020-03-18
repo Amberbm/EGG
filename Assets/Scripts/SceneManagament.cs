@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class SceneManagament : MonoBehaviour
 {
-    bool firstime = true;
+    public bool firstime = true;
     public void StartGame()
     {
         if (firstime)

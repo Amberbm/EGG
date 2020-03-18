@@ -150,6 +150,8 @@ RectTransform:
   m_Children:
   - {fileID: 1836540127}
   - {fileID: 1765798670}
+  - {fileID: 2091709524}
+  - {fileID: 1083379556}
   m_Father: {fileID: 1897197018}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -991,10 +993,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -2042,6 +2044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 649e0db4e8f36b44ebad260e0249a1cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstime: 1
 --- !u!4 &220434446
 Transform:
   m_ObjectHideFlags: 0
@@ -2915,6 +2918,81 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &360285954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 360285955}
+  - component: {fileID: 360285956}
+  m_Layer: 5
+  m_Name: Copyright
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &360285955
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360285954}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1342038512}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000070151465, y: 10.640564}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &360285956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360285954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8564cc42670f8a444a656fb319f12ed9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0
+  propertyName: Copyright
+  Tags:
+  - Stocks
+  - Advertisement
+  baseWorth: 20
+  price: 60
+  morality: -20
+  influence: -10
+  environment: 0
+  Description: You buy a copyright and start claiming anything that violates said
+    copyright, resulting in several dozen court cases you are guaranteed to win.
+  unbuyable: 0
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 678633339}
+        m_MethodName: AddProperty
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 360285956}
+          m_ObjectArgumentAssemblyTypeName: PropertyObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &376787833
 GameObject:
   m_ObjectHideFlags: 0
@@ -3475,8 +3553,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035156, y: 5.0002003}
-  m_SizeDelta: {x: 183.33, y: 25.667}
+  m_AnchoredPosition: {x: 0, y: 5}
+  m_SizeDelta: {x: 145.3, y: 25.667}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &465919746
 MonoBehaviour:
@@ -4608,7 +4686,7 @@ RectTransform:
   m_GameObject: {fileID: 624299927}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.15, y: 1.15, z: 1.15}
   m_Children:
   - {fileID: 1259765763}
   m_Father: {fileID: 709485412}
@@ -8100,6 +8178,7 @@ MonoBehaviour:
   propertyName: lemonade stand
   Tags:
   - HomeMade
+  - Food
   baseWorth: 3
   price: 10
   morality: 10
@@ -8574,6 +8653,75 @@ Transform:
   m_Father: {fileID: 1471818135}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1083379555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1083379556}
+  - component: {fileID: 1083379557}
+  m_Layer: 5
+  m_Name: Environment
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1083379556
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083379555}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 16440012}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1083379557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083379555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1b3ef30c1c16040ab0f7209e699621, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 678633339}
+        m_MethodName: AddResearch
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1083379557}
+          m_ObjectArgumentAssemblyTypeName: Research, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  id: 0
+  ResearchName: Enviroment
+  Description: Spend some time looking up climate change and how to combat it.
+  price: 10
+  morality: 0
+  influence: 0
+  environment: 10
 --- !u!1 &1089225762
 GameObject:
   m_ObjectHideFlags: 0
@@ -9564,10 +9712,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -9636,6 +9784,7 @@ MonoBehaviour:
   propertyName: "McNaldo\u2019s"
   Tags:
   - Fast food
+  - Food
   baseWorth: 50
   price: 0
   morality: 0
@@ -10396,6 +10545,8 @@ RectTransform:
   - {fileID: 1294272448}
   - {fileID: 2009473442}
   - {fileID: 1779280195}
+  - {fileID: 1509849732}
+  - {fileID: 360285955}
   m_Father: {fileID: 1897197018}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11598,6 +11749,81 @@ MonoBehaviour:
   previousEventsFirstOption: []
   SecondOptionSelected: 0
   hasHappened: 0
+--- !u!1 &1509849731
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1509849732}
+  - component: {fileID: 1509849733}
+  m_Layer: 5
+  m_Name: Tech store
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1509849732
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509849731}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1342038512}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000070151465, y: 10.640564}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1509849733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509849731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8564cc42670f8a444a656fb319f12ed9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0
+  propertyName: Tech store
+  Tags:
+  - Corporation
+  - Mechanical
+  baseWorth: 10
+  price: 25
+  morality: 10
+  influence: 0
+  environment: -5
+  Description: 'You set up a computer hardware store, you sell anything from PC to
+    Laptops, from smartphones to washing machines. '
+  unbuyable: 0
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 678633339}
+        m_MethodName: AddProperty
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1509849733}
+          m_ObjectArgumentAssemblyTypeName: PropertyObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1539131736
 GameObject:
   m_ObjectHideFlags: 0
@@ -12041,6 +12267,7 @@ MonoBehaviour:
   Tags:
   - Fancy
   - Fast food
+  - Food
   baseWorth: 7
   price: 20
   morality: 7
@@ -13049,7 +13276,7 @@ GameObject:
   - component: {fileID: 1765798670}
   - component: {fileID: 1765798671}
   m_Layer: 5
-  m_Name: ResearchObject (1)
+  m_Name: Influence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13101,9 +13328,9 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   id: 0
-  ResearchName: some Reasearch
-  Description: an description
-  price: 3
+  ResearchName: Influence
+  Description: Research the way too get power
+  price: 10
   morality: 0
   influence: 3
   environment: 0
@@ -13337,6 +13564,7 @@ MonoBehaviour:
   propertyName: A fake charity
   Tags:
   - Corporation
+  - Donation
   baseWorth: 30
   price: 50
   morality: -40
@@ -14230,7 +14458,7 @@ RectTransform:
   m_GameObject: {fileID: 1833791489}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.15, y: 1.15, z: 1.15}
   m_Children:
   - {fileID: 113133216}
   m_Father: {fileID: 709485412}
@@ -15499,6 +15727,7 @@ MonoBehaviour:
   propertyName: An actual charity
   Tags:
   - Environment friendly
+  - Donation
   baseWorth: 0
   price: 50
   morality: 40
@@ -16074,6 +16303,75 @@ RectTransform:
   m_AnchoredPosition: {x: -2.5, y: 0}
   m_SizeDelta: {x: -15, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2091709523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2091709524}
+  - component: {fileID: 2091709525}
+  m_Layer: 5
+  m_Name: Morality
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2091709524
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091709523}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 16440012}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2091709525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091709523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1b3ef30c1c16040ab0f7209e699621, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 678633339}
+        m_MethodName: AddResearch
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2091709525}
+          m_ObjectArgumentAssemblyTypeName: Research, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  id: 0
+  ResearchName: Morality
+  Description: Read some philosophy and ponder your own morality
+  price: 10
+  morality: 10
+  influence: 0
+  environment: 0
 --- !u!1 &2096433952
 GameObject:
   m_ObjectHideFlags: 0
