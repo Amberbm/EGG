@@ -655,8 +655,8 @@ MonoBehaviour:
   id: 0
   eventName: Ice cream factory
   eventDescription: An opportunity to buy an ice cream factory for only 25 arrives.
-    The previous owner is a very rich man with a top hat but no one knows how he got
-    so rich.
+    The previous owner is a very rich man with a top hat but no one knows how he
+    got so rich.
   stringOption1: You decide to buy the factory because it is very profitable.
   eventConsequences: 
   stringOption2: "\u201CThe owner seems a bit shady so maybe it\u2019s best i dont
@@ -690,6 +690,138 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &83835282
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 83835283}
+  - component: {fileID: 83835284}
+  m_Layer: 5
+  m_Name: EntPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &83835283
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83835282}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1186494134}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &83835284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83835282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7429df8e876cf4582fd69401c9dacf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 202028141}
+        m_MethodName: AddHeadline
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 83835284}
+          m_ObjectArgumentAssemblyTypeName: Headline, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  title: People have been consuming entertainment at a rapid pace thanks to a recent
+    virus causing them to stay inside.
+  tag: Entertainment
+  factor: 1.5
+--- !u!1 &86665020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 86665021}
+  - component: {fileID: 86665022}
+  m_Layer: 5
+  m_Name: Envirpos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &86665021
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86665020}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1186494134}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &86665022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86665020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7429df8e876cf4582fd69401c9dacf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 202028141}
+        m_MethodName: AddHeadline
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 86665022}
+          m_ObjectArgumentAssemblyTypeName: Headline, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  title: Thanks to multiple celebrities tweeting about the environment, people have
+    become more environment friendly.
+  tag: Environment friendly
+  factor: 1.5
 --- !u!1 &97290157
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,7 +1043,8 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Your choice has made the CEO's very happy and they even
-            give you some bribes to stay silent. So you've profited, but at what cost?
+            give you some bribes to stay silent. So you've profited, but at what
+            cost?
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 164424959}
@@ -1520,10 +1653,10 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1538,9 +1671,9 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 2032106350}
+  m_TargetGraphic: {fileID: 1377962663}
   m_FillRect: {fileID: 1869680241}
-  m_HandleRect: {fileID: 2032106348}
+  m_HandleRect: {fileID: 1377962662}
   m_Direction: 0
   m_MinValue: 0
   m_MaxValue: 100
@@ -1745,7 +1878,7 @@ GameObject:
   - component: {fileID: 170123439}
   - component: {fileID: 170123440}
   m_Layer: 5
-  m_Name: Headline (2)
+  m_Name: EntPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1796,8 +1929,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  title: I made this headline myself
-  tag: HomeMade
+  title: People have been consuming entertainment at a rapid pace thanks to a recent
+    virus causing them to stay inside.
+  tag: Entertainment
   factor: 1.5
 --- !u!1 &179365284
 GameObject:
@@ -2254,7 +2388,7 @@ GameObject:
   - component: {fileID: 220442805}
   - component: {fileID: 220442806}
   m_Layer: 5
-  m_Name: Headline (1)
+  m_Name: HomeMadeNeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2305,8 +2439,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  title: People hate school
-  tag: Educational
+  title: "It has become harder and harder for small one person only businesses to
+    succeed, the recent crash in the market isn\u2019t helping. It will not be a
+    good time to invest into homemade businesses. "
+  tag: HomeMade
   factor: 0.5
 --- !u!1 &223177699
 GameObject:
@@ -2504,7 +2640,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2032106348}
+  - {fileID: 1377962662}
   m_Father: {fileID: 164424960}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3346,6 +3482,72 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &337813263
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 337813264}
+  - component: {fileID: 337813265}
+  m_Layer: 5
+  m_Name: EducNeg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &337813264
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337813263}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1186494134}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &337813265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337813263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7429df8e876cf4582fd69401c9dacf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 202028141}
+        m_MethodName: AddHeadline
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 337813265}
+          m_ObjectArgumentAssemblyTypeName: Headline, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  title: "A popular influencer has praised a \u2018free parent\u2019 lifestyle, causing
+    other parents to not buy anymore educational products."
+  tag: Education
+  factor: 0.5
 --- !u!1 &349001908
 GameObject:
   m_ObjectHideFlags: 0
@@ -3399,69 +3601,6 @@ RectTransform:
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000025510788, y: -1.5500507}
   m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &371736723
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 371736725}
-  - component: {fileID: 371736724}
-  m_Layer: 5
-  m_Name: Notification (LeanPulse)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &371736724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 371736723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fdf9a6ea50fc2c4496205af91d278e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  remainingPulses: 0
-  remainingTime: 0
-  timeInterval: 1
-  timing: 0
-  pulseTransitions:
-    speed: 0
-    roots:
-    - {fileID: 2064237386}
-    aliases: []
-    targets: []
-  onPulse:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!224 &371736725
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 371736723}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.71468955, y: 0.71468955, z: 0.71468955}
-  m_Children:
-  - {fileID: 894979573}
-  - {fileID: 2064237386}
-  m_Father: {fileID: 226373298}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000091552734, y: -573.2001}
-  m_SizeDelta: {x: 424.56, y: 332.41498}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &360285954
 GameObject:
@@ -3538,6 +3677,69 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &371736723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 371736725}
+  - component: {fileID: 371736724}
+  m_Layer: 5
+  m_Name: Notification (LeanPulse)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &371736724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371736723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdf9a6ea50fc2c4496205af91d278e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  remainingPulses: 0
+  remainingTime: 0
+  timeInterval: 1
+  timing: 0
+  pulseTransitions:
+    speed: 0
+    roots:
+    - {fileID: 2064237386}
+    aliases: []
+    targets: []
+  onPulse:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!224 &371736725
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371736723}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.71468955, y: 0.71468955, z: 0.71468955}
+  m_Children:
+  - {fileID: 894979573}
+  - {fileID: 2064237386}
+  m_Father: {fileID: 226373298}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.000091552734, y: -573.2001}
+  m_SizeDelta: {x: 424.56, y: 332.41498}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &376787833
 GameObject:
   m_ObjectHideFlags: 0
@@ -3779,6 +3981,138 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 420120522}
   m_CullTransparentMesh: 0
+--- !u!1 &422361550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 422361551}
+  - component: {fileID: 422361552}
+  m_Layer: 5
+  m_Name: EntNeg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &422361551
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422361550}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1186494134}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &422361552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422361550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7429df8e876cf4582fd69401c9dacf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 202028141}
+        m_MethodName: AddHeadline
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 422361552}
+          m_ObjectArgumentAssemblyTypeName: Headline, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  title: Too many celebrities have had scandals in one month, causing people to be
+    distrustful of entertainment.
+  tag: Entertainment
+  factor: 0.5
+--- !u!1 &423668382
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 423668383}
+  - component: {fileID: 423668384}
+  m_Layer: 5
+  m_Name: EducPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &423668383
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423668382}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1186494134}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &423668384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423668382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7429df8e876cf4582fd69401c9dacf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 202028141}
+        m_MethodName: AddHeadline
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 423668384}
+          m_ObjectArgumentAssemblyTypeName: Headline, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  title: It has become more and more important for parents that their children are
+    educated, so now is a perfect opening to strike according to researchers.
+  tag: Education
+  factor: 1.5
 --- !u!1 &427397027
 GameObject:
   m_ObjectHideFlags: 0
@@ -4772,6 +5106,72 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &525370440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 525370441}
+  - component: {fileID: 525370442}
+  m_Layer: 5
+  m_Name: RelPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &525370441
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525370440}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1186494134}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &525370442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525370440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7429df8e876cf4582fd69401c9dacf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 202028141}
+        m_MethodName: AddHeadline
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 525370442}
+          m_ObjectArgumentAssemblyTypeName: Headline, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  title: "There\u2019s been an sudden rise in support for religion after the burning
+    down of an important religious building in France."
+  tag: Religion
+  factor: 1.5
 --- !u!1 &526404206
 GameObject:
   m_ObjectHideFlags: 0
@@ -5038,6 +5438,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 560863957}
   m_CullTransparentMesh: 0
+--- !u!1 &565708073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 565708074}
+  - component: {fileID: 565708075}
+  m_Layer: 5
+  m_Name: AdNeg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &565708074
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565708073}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1186494134}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &565708075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565708073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7429df8e876cf4582fd69401c9dacf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 202028141}
+        m_MethodName: AddHeadline
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 565708075}
+          m_ObjectArgumentAssemblyTypeName: Headline, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  title: '80% of people despise ads and mention actually avoiding the product after
+    seeing an ad of that product. '
+  tag: Advertisements
+  factor: 0.5
 --- !u!1 &568777952
 GameObject:
   m_ObjectHideFlags: 0
@@ -5266,6 +5732,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 570372283}
   m_CullTransparentMesh: 0
+--- !u!1 &579002829
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 579002830}
+  - component: {fileID: 579002831}
+  m_Layer: 5
+  m_Name: PolPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &579002830
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579002829}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1186494134}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &579002831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579002829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7429df8e876cf4582fd69401c9dacf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 202028141}
+        m_MethodName: AddHeadline
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 579002831}
+          m_ObjectArgumentAssemblyTypeName: Headline, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  title: "With the elections coming up there\u2019s been a rise in interest in politics."
+  tag: Politics
+  factor: 1.5
 --- !u!1 &587482158
 GameObject:
   m_ObjectHideFlags: 0
@@ -5422,6 +5953,72 @@ MonoBehaviour:
         m_CallState: 2
   tagName: Food
   InfluenceFactor: 1
+--- !u!1 &606864374
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 606864375}
+  - component: {fileID: 606864376}
+  m_Layer: 5
+  m_Name: PolNeg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &606864375
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606864374}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1186494134}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &606864376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606864374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7429df8e876cf4582fd69401c9dacf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 202028141}
+        m_MethodName: AddHeadline
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 606864376}
+          m_ObjectArgumentAssemblyTypeName: Headline, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  title: "People are becoming tired of the constant politics: \u201CIt\u2019s the
+    only thing my friends talk about.\u201D Says an anonymous source. "
+  tag: Politics
+  factor: 0.5
 --- !u!1 &619505866
 GameObject:
   m_ObjectHideFlags: 0
@@ -5668,6 +6265,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624299927}
   m_CullTransparentMesh: 0
+--- !u!1 &632467962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 632467963}
+  - component: {fileID: 632467964}
+  m_Layer: 5
+  m_Name: MechNeg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &632467963
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632467962}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1186494134}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &632467964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632467962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7429df8e876cf4582fd69401c9dacf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 202028141}
+        m_MethodName: AddHeadline
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 632467964}
+          m_ObjectArgumentAssemblyTypeName: Headline, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  title: 'A recent article has come out about robots taking over the world, and researches
+    see an increase in the fear of mechanics. '
+  tag: Mechanical
+  factor: 0.5
 --- !u!1 &633778668
 GameObject:
   m_ObjectHideFlags: 0
@@ -5735,6 +6398,72 @@ MonoBehaviour:
   Influence: 10
   upgradeName: Bigger office
   Description: Your ofice looks fancier, costs 50
+--- !u!1 &637388707
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 637388708}
+  - component: {fileID: 637388709}
+  m_Layer: 5
+  m_Name: Envirneg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &637388708
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637388707}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1186494134}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &637388709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637388707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7429df8e876cf4582fd69401c9dacf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 202028141}
+        m_MethodName: AddHeadline
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 637388709}
+          m_ObjectArgumentAssemblyTypeName: Headline, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  title: "There\u2019s been a surprising rise of people thinking that no matter what
+    they do, the earth is doomed anyway, lowering friendliness towards the environment. "
+  tag: Environment friendly
+  factor: 0.5
 --- !u!1 &644867992
 GameObject:
   m_ObjectHideFlags: 0
@@ -7927,7 +8656,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -7941,7 +8670,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1052357378}
   m_FillRect: {fileID: 129262487}
   m_HandleRect: {fileID: 1052357376}
@@ -8311,6 +9040,71 @@ RectTransform:
   m_AnchoredPosition: {x: -130, y: -105}
   m_SizeDelta: {x: 201.6, y: 235.7}
   m_Pivot: {x: 0, y: 0.5}
+--- !u!1 &942791712
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 942791713}
+  - component: {fileID: 942791714}
+  m_Layer: 5
+  m_Name: StocPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &942791713
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942791712}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1186494134}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &942791714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942791712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7429df8e876cf4582fd69401c9dacf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 202028141}
+        m_MethodName: AddHeadline
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 942791714}
+          m_ObjectArgumentAssemblyTypeName: Headline, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  title: "It\u2019s never been easier to invest in stocks!"
+  tag: Stocks
+  factor: 1.5
 --- !u!1 &953169912
 GameObject:
   m_ObjectHideFlags: 0
@@ -8722,6 +9516,72 @@ MonoBehaviour:
   previousEventsFirstOption: []
   SecondOptionSelected: 0
   hasHappened: 0
+--- !u!1 &979626473
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 979626474}
+  - component: {fileID: 979626475}
+  m_Layer: 5
+  m_Name: FoodNeg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &979626474
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979626473}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1186494134}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &979626475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979626473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7429df8e876cf4582fd69401c9dacf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 202028141}
+        m_MethodName: AddHeadline
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 979626475}
+          m_ObjectArgumentAssemblyTypeName: Headline, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  title: Thanks to the recent virus, less and less people have been ordering food
+    from the industry, prefering to just cook their own food.
+  tag: Food
+  factor: 0.5
 --- !u!1 &1001113132
 GameObject:
   m_ObjectHideFlags: 0
@@ -8873,7 +9733,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -8887,7 +9747,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1640192862}
   m_FillRect: {fileID: 1445885984}
   m_HandleRect: {fileID: 1640192861}
@@ -9465,6 +10325,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1062525987}
   m_CullTransparentMesh: 0
+--- !u!1 &1070180782
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1070180783}
+  - component: {fileID: 1070180784}
+  m_Layer: 5
+  m_Name: AdPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1070180783
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070180782}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1186494134}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1070180784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070180782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7429df8e876cf4582fd69401c9dacf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 202028141}
+        m_MethodName: AddHeadline
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1070180784}
+          m_ObjectArgumentAssemblyTypeName: Headline, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  title: "80% of people actually look at ads! \u201CPeople have never been more susceptible
+    to them than now.\u201D A researcher said. "
+  tag: Advertisements
+  factor: 1.5
 --- !u!1 &1076214728
 GameObject:
   m_ObjectHideFlags: 0
@@ -10085,8 +11011,8 @@ MonoBehaviour:
   id: 0
   eventName: Nigerian prince
   eventDescription: "You get an email from \u2018a far relative\u2019 from Nigeria
-    that announces his uncle, a prominent and rich person, has died and you have the
-    right to a big part of his inheritance. All you have to do is transfer 10.000$
+    that announces his uncle, a prominent and rich person, has died and you have
+    the right to a big part of his inheritance. All you have to do is transfer 10.000$
     to his bank account."
   stringOption1: "\u201CI\u2019m not sure if I have family in Africa\u201D"
   eventConsequences: 
@@ -10510,6 +11436,28 @@ RectTransform:
   - {fileID: 506658043}
   - {fileID: 220442805}
   - {fileID: 170123439}
+  - {fileID: 1200923259}
+  - {fileID: 1759734610}
+  - {fileID: 86665021}
+  - {fileID: 637388708}
+  - {fileID: 2139646348}
+  - {fileID: 1981314803}
+  - {fileID: 2072665668}
+  - {fileID: 632467963}
+  - {fileID: 83835283}
+  - {fileID: 422361551}
+  - {fileID: 423668383}
+  - {fileID: 337813264}
+  - {fileID: 1817294993}
+  - {fileID: 979626474}
+  - {fileID: 579002830}
+  - {fileID: 606864375}
+  - {fileID: 525370441}
+  - {fileID: 1598517638}
+  - {fileID: 942791713}
+  - {fileID: 1664135606}
+  - {fileID: 1070180783}
+  - {fileID: 565708074}
   m_Father: {fileID: 226373298}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10595,6 +11543,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1190202778}
   m_CullTransparentMesh: 0
+--- !u!1 &1200923258
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1200923259}
+  - component: {fileID: 1200923260}
+  m_Layer: 5
+  m_Name: HomeMadepos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1200923259
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200923258}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1186494134}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1200923260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200923258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7429df8e876cf4582fd69401c9dacf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 202028141}
+        m_MethodName: AddHeadline
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1200923260}
+          m_ObjectArgumentAssemblyTypeName: Headline, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  title: 'There is a boom of people wanting to support people on sites like etsy
+    or patreon, increasing the profit of homemade things. '
+  tag: HomeMade
+  factor: 1.5
 --- !u!1 &1257010273
 GameObject:
   m_ObjectHideFlags: 0
@@ -11894,17 +12908,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 587482159}
-        m_MethodName: NextDay
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 735966477}
         m_MethodName: SetIncome
         m_Mode: 1
@@ -12017,6 +13020,79 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1376664195}
+  m_CullTransparentMesh: 0
+--- !u!1 &1377962661
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1377962662}
+  - component: {fileID: 1377962664}
+  - component: {fileID: 1377962663}
+  m_Layer: 5
+  m_Name: Handle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1377962662
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377962661}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 265905465}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 5.2, y: 0}
+  m_SizeDelta: {x: 30.4, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1377962663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377962661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1377962664
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377962661}
   m_CullTransparentMesh: 0
 --- !u!1 &1383031236
 GameObject:
@@ -12151,8 +13227,8 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Since you aren't very well known no one really cares what
-            the ad looks like, it still slightly hightens your influence.
+          m_StringArgument: Since you aren't very well known no one really cares
+            what the ad looks like, it still slightly hightens your influence.
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 465919748}
@@ -13546,6 +14622,72 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &1598517637
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1598517638}
+  - component: {fileID: 1598517639}
+  m_Layer: 5
+  m_Name: RelNeg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1598517638
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598517637}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1186494134}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1598517639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598517637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7429df8e876cf4582fd69401c9dacf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 202028141}
+        m_MethodName: AddHeadline
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1598517639}
+          m_ObjectArgumentAssemblyTypeName: Headline, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  title: There have never been more atheists in the world than now, a recent study
+    shows, these people want nothing to do with religion.
+  tag: Religion
+  factor: 0.5
 --- !u!1 &1617522008
 GameObject:
   m_ObjectHideFlags: 0
@@ -14053,6 +15195,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1640192860}
   m_CullTransparentMesh: 0
+--- !u!1 &1664135605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1664135606}
+  - component: {fileID: 1664135607}
+  m_Layer: 5
+  m_Name: StocNeg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1664135606
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664135605}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1186494134}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1664135607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664135605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7429df8e876cf4582fd69401c9dacf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 202028141}
+        m_MethodName: AddHeadline
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1664135607}
+          m_ObjectArgumentAssemblyTypeName: Headline, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  title: A recent market crash has made stocks less and less attractive.
+  tag: Stocks
+  factor: 0.5
 --- !u!1 &1701840719
 GameObject:
   m_ObjectHideFlags: 0
@@ -14522,6 +15729,73 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740925256}
   m_CullTransparentMesh: 0
+--- !u!1 &1759734609
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1759734610}
+  - component: {fileID: 1759734611}
+  m_Layer: 5
+  m_Name: HomeMadePos 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1759734610
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759734609}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1186494134}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1759734611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759734609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7429df8e876cf4582fd69401c9dacf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 202028141}
+        m_MethodName: AddHeadline
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1759734611}
+          m_ObjectArgumentAssemblyTypeName: Headline, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  title: "It\u2019s never been easier to start your own business! And thanks to a
+    recent celebrity tweeting it has become even more popular! Now is the time to
+    start making things yourself!"
+  tag: HomeMade
+  factor: 1.5
 --- !u!1 &1765798669
 GameObject:
   m_ObjectHideFlags: 0
@@ -14589,7 +15863,7 @@ MonoBehaviour:
   Description: Research the way too get power
   price: 10
   morality: 0
-  influence: 3
+  influence: 10
   environment: 0
 --- !u!1 &1775019059
 GameObject:
@@ -14735,8 +16009,8 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Dionysus becomes insulted and starts a conference in which
-            he, the god of wine, tells the public that you hate wine.
+          m_StringArgument: Dionysus becomes insulted and starts a conference in
+            which he, the god of wine, tells the public that you hate wine.
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 164424959}
@@ -15452,8 +16726,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image1: {fileID: 1740925256}
   image2: {fileID: 1620626077}
-  audio1: {fileID: 0}
-  audio2: {fileID: 0}
+  audio1: {fileID: 1782002065}
+  audio2: {fileID: 1713907007}
 --- !u!1 &1811247308
 GameObject:
   m_ObjectHideFlags: 0
@@ -15541,6 +16815,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1811247308}
   m_CullTransparentMesh: 0
+--- !u!1 &1817294992
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1817294993}
+  - component: {fileID: 1817294994}
+  m_Layer: 5
+  m_Name: FoodPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1817294993
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817294992}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1186494134}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1817294994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817294992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7429df8e876cf4582fd69401c9dacf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 202028141}
+        m_MethodName: AddHeadline
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1817294994}
+          m_ObjectArgumentAssemblyTypeName: Headline, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  title: "There\u2019s been an alarming rate of people stress eating, bad for the
+    people, good for food industries."
+  tag: Food
+  factor: 1.5
 --- !u!1 &1819492610
 GameObject:
   m_ObjectHideFlags: 0
@@ -16193,7 +17533,7 @@ MonoBehaviour:
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -16226,8 +17566,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035156, y: 5.0002003}
-  m_SizeDelta: {x: 183.33, y: 25.667}
+  m_AnchoredPosition: {x: -0.7000122, y: 4.9939}
+  m_SizeDelta: {x: 163.1, y: 25.683}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1885545691
 GameObject:
@@ -17082,6 +18422,72 @@ MonoBehaviour:
         m_CallState: 2
   tagName: Daily necessities
   InfluenceFactor: 1
+--- !u!1 &1981314802
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1981314803}
+  - component: {fileID: 1981314804}
+  m_Layer: 5
+  m_Name: CorNeg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1981314803
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981314802}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1186494134}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1981314804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981314802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7429df8e876cf4582fd69401c9dacf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 202028141}
+        m_MethodName: AddHeadline
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1981314804}
+          m_ObjectArgumentAssemblyTypeName: Headline, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  title: 'It has been leaked that Beff Jezos committed tax evasion, raising distrust
+    of all corporation owners. '
+  tag: Corporation
+  factor: 0.5
 --- !u!1 &2009473441
 GameObject:
   m_ObjectHideFlags: 0
@@ -17140,8 +18546,8 @@ MonoBehaviour:
   morality: 40
   influence: 20
   environment: 10
-  Description: Help fund an actual charity! Won't give you any money but will be sure
-    to earn respect and morality!
+  Description: Help fund an actual charity! Won't give you any money but will be
+    sure to earn respect and morality!
   unbuyable: 0
   add:
     m_PersistentCalls:
@@ -17334,79 +18740,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2015728914}
   m_CullTransparentMesh: 0
---- !u!1 &2032106347
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2032106348}
-  - component: {fileID: 2032106349}
-  - component: {fileID: 2032106350}
-  m_Layer: 5
-  m_Name: Handle
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2032106348
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2032106347}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 265905465}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 5.2, y: 0}
-  m_SizeDelta: {x: 30.4, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &2032106349
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2032106347}
-  m_CullTransparentMesh: 0
---- !u!114 &2032106350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2032106347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &2033924328
 GameObject:
   m_ObjectHideFlags: 0
@@ -17679,6 +19012,72 @@ MonoBehaviour:
         m_CallState: 2
   tagName: Corporation
   InfluenceFactor: 1
+--- !u!1 &2072665667
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2072665668}
+  - component: {fileID: 2072665669}
+  m_Layer: 5
+  m_Name: MechPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2072665668
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072665667}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1186494134}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2072665669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072665667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7429df8e876cf4582fd69401c9dacf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 202028141}
+        m_MethodName: AddHeadline
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2072665669}
+          m_ObjectArgumentAssemblyTypeName: Headline, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  title: A new meme about roombas with knives has been gaining popularity causing
+    a rise in the amount of people who buy mechanical products.
+  tag: Mechanical
+  factor: 1.5
 --- !u!1 &2087118355
 GameObject:
   m_ObjectHideFlags: 0
@@ -18517,3 +19916,69 @@ MonoBehaviour:
   previousEventsFirstOption: []
   SecondOptionSelected: 0
   hasHappened: 0
+--- !u!1 &2139646347
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2139646348}
+  - component: {fileID: 2139646349}
+  m_Layer: 5
+  m_Name: CorPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2139646348
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139646347}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1186494134}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2139646349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139646347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7429df8e876cf4582fd69401c9dacf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  add:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 202028141}
+        m_MethodName: AddHeadline
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2139646349}
+          m_ObjectArgumentAssemblyTypeName: Headline, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  title: 'Melon Usk has donated a lot of money to a charity helping third world countries,
+    this had a positive effect on public opinion on corporations. '
+  tag: 1.5
+  factor: 0

@@ -8,7 +8,7 @@ using Lean.Transition;
 
 public class MoneyManager : MonoBehaviour
 {
-    public static int amount=10; //total amount of money the player has
+    public static int amount=1000; //total amount of money the player has
     public Text text;
     public int extraincome; 
     public static int income = 0;
